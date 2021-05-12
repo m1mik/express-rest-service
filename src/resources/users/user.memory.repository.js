@@ -4,8 +4,9 @@ const User = require('./user.model');
 const getAll = () => users;
 const getById = (id) => users.find((user) => user.id === id);
 const createUser = (user) => {
-  users.push(new User(user));
-  return User.toResponse(user);
+  const newUser = new User(user);
+  users.push(newUser);
+  return User.toResponse(newUser);
 };
 const deleteById = (id) => {
   let removedUser = null;
