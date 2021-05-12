@@ -1,16 +1,16 @@
-let tasks = [];
+global.tasks = [];
 const Task = require('./task.model');
 
-const getAll = () => tasks;
-const getById = (id) => tasks.find((tas) => tas.id === id);
+const getAll = () => global.tasks;
+const getById = (id) => global.tasks.find((tas) => tas.id === id);
 const createTask = (task) => {
   const newTask = new Task(task);
-  tasks.push(newTask);
+  global.tasks.push(newTask);
   return newTask;
 };
 const deleteById = (id) => {
   let removedTask = null;
-  tasks = tasks.filter((task) => {
+  global.tasks = global.tasks.filter((task) => {
     if (task.id === id) {
       removedTask = task;
       return false;
@@ -23,7 +23,7 @@ const deleteById = (id) => {
 };
 const updateTask = (dataForUpdate) => {
   let taskForReturn = null;
-  tasks = tasks.map((task) => {
+  global.tasks = global.tasks.map((task) => {
     if (task.id === dataForUpdate.id) {
       const updatedTask = {
         ...task,

@@ -7,7 +7,7 @@ class Task {
     title = 'TASK NAME',
     order,
     description,
-    userId,
+    userId = null,
     boardId,
     columnId,
   } = {}) {

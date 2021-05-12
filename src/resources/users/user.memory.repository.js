@@ -10,11 +10,19 @@ const createUser = (user) => {
 };
 const deleteById = (id) => {
   let removedUser = null;
+  console.log('global tasks before user del: ', global.tasks);
   users = users.filter((user) => {
     if (user.id === id) {
       removedUser = user;
+      global.tasks = global.tasks.map((tas) => {
+        if (tas.userId === id) {
+          return { ...tas, userId: null };
+        }
+        return tas;
+      });
       return false;
     }
+    console.log('global tasks after user del: ', global.tasks);
 
     return true;
   });

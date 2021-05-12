@@ -20,7 +20,8 @@ router.get('/:id', async (req, res) => {
 router.post(
   '/',
   body('title').exists(),
-  body(['userId', 'boardId', 'columnId']).exists().isUUID(),
+  body(['boardId', 'columnId']).exists().isUUID(),
+  body('userId').isUUID(),
   body('order').isNumeric(),
   validate,
   (req, res) => {
@@ -36,7 +37,7 @@ router.delete('/:id', async (req, res) => {
 
 router.put(
   '/:id',
-  body(['userId', 'boardId', 'columnId']).isUUID(),
+  body(['userId', 'boardId', 'columnId']).optional().isUUID(),
   body('order').isNumeric(),
   validate,
   async (req, res) => {
