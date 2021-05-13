@@ -5,11 +5,11 @@ class Task {
   constructor({
     id = uuidv4(),
     title = 'TASK NAME',
-    order,
-    description,
+    order = 0,
+    description = '',
     userId = null,
-    boardId,
-    columnId,
+    boardId = null,
+    columnId = null,
   } = {}) {
     this.id = id;
     this.title = title;

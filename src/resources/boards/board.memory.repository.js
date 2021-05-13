@@ -12,7 +12,6 @@ const createBoard = (board) => {
 
 const deleteById = (id) => {
   let removedBoard = null;
-  console.log('tasks before board del: ', global.tasks);
   global.boards = global.boards.filter((board) => {
     if (board.id === id) {
       removedBoard = board;
@@ -22,7 +21,6 @@ const deleteById = (id) => {
     }
     return true;
   });
-  console.log('tasks after board del: ', global.tasks);
   if (removedBoard) return removedBoard;
   return new Error(`There is no board with ${id} id.`);
 };

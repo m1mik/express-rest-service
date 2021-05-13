@@ -20,12 +20,19 @@ router.get('/:id', async (req, res) => {
 router.post(
   '/',
   body('title').exists(),
-  body(['boardId', 'columnId']).exists().isUUID(),
-  body('userId').isUUID(),
   body('order').isNumeric(),
   validate,
   (req, res) => {
-    res.status(201).json(taskService.createTask(req.body));
+    const boardId = `${req.baseUrl}`.split('/')[2];
+    res
+      .status(201)
+      .json(
+        taskService.createTask({
+          description: 'Lorem ipsum',
+          ...req.body,
+          boardId,
+        })
+      );
   }
 );
 
@@ -35,16 +42,13 @@ router.delete('/:id', async (req, res) => {
   return res.status(200).json({ message: result });
 });
 
-router.put(
-  '/:id',
-  body(['userId', 'boardId', 'columnId']).optional().isUUID(),
-  body('order').isNumeric(),
-  validate,
-  async (req, res) => {
-    const result = taskService.updateTask({ ...req.body, id: req.params.id });
-    if (isError(result)) return res.status(404).json(result);
-    return res.status(200).json({ message: result });
-  }
-);
+router.put('/:id', async (req, res) => {
+  const result = taskService.updateTask({
+    ...req.body,
+    id: req.params.id,
+  });
+  if (isError(result)) return res.status(404).json(result);
+  return res.status(200).json({ message: result });
+});
 
 module.exports = router;
