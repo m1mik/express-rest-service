@@ -1,20 +1,20 @@
-global.boards = [];
+const DB = require('../DB');
 const Board = require('./board.model');
 
-const getAll = () => global.boards;
+const getAll = () => DB.boards;
 
-const getById = (id) => global.boards.find((board) => board.id === id);
+const getById = (id) => DB.boards.find((board) => board.id === id);
 const createBoard = (data) => {
   const newBoard = new Board(data);
-  global.boards.push(newBoard);
+  DB.boards.push(newBoard);
   return newBoard;
 };
 const deleteById = (id) => {
   let removedBoard = null;
-  global.boards = global.boards.filter((board) => {
+  DB.boards = DB.boards.filter((board) => {
     if (board.id === id) {
       removedBoard = board;
-      global.tasks = global.tasks.filter((tas) => tas.boardId !== id);
+      DB.tasks = DB.tasks.filter((tas) => tas.boardId !== id);
 
       return false;
     }
@@ -25,7 +25,7 @@ const deleteById = (id) => {
 };
 const updateBoard = (dataForUpdate) => {
   let boardForReturn = null;
-  global.boards = global.boards.map((board) => {
+  DB.boards = DB.boards.map((board) => {
     if (board.id === dataForUpdate.id) {
       const updatedBoard = {
         ...board,

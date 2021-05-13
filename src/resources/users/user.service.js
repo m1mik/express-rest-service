@@ -1,20 +1,20 @@
-let users = [];
+const DB = require('../DB');
 const User = require('./user.model');
 
-const getAll = () => users;
+const getAll = () => DB.users;
 
-const getById = (id) => users.find((user) => user.id === id);
+const getById = (id) => DB.users.find((user) => user.id === id);
 const createUser = (data) => {
   const newUser = new User(data);
-  users.push(newUser);
+  DB.users.push(newUser);
   return User.toResponse(newUser);
 };
 const deleteById = (id) => {
   let removedUser = null;
-  users = users.filter((user) => {
+  DB.users = DB.users.filter((user) => {
     if (user.id === id) {
       removedUser = user;
-      global.tasks = global.tasks.map((tas) => {
+      DB.tasks = DB.tasks.map((tas) => {
         if (tas.userId === id) {
           return { ...tas, userId: null };
         }
@@ -30,7 +30,7 @@ const deleteById = (id) => {
 };
 const updateUser = (dataForUpdate) => {
   let userForReturn = null;
-  users = users.map((user) => {
+  DB.users = DB.users.map((user) => {
     if (user.id === dataForUpdate.id) {
       const updatedUser = {
         ...user,
