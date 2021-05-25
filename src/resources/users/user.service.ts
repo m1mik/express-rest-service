@@ -1,15 +1,15 @@
-const DB = require('../DB');
-const User = require('./user.model');
+import DB from '../DB';
+import User from './user.model';
 
-const getAll = () => DB.users;
+export const getAll = () => DB.users;
 
-const getById = (id) => DB.users.find((user) => user.id === id);
-const createUser = (data) => {
+export const getById = (id) => DB.users.find((user) => user.id === id);
+export const createUser = (data) => {
   const newUser = new User(data);
   DB.users.push(newUser);
   return User.toResponse(newUser);
 };
-const deleteById = (id) => {
+export const deleteById = (id) => {
   let removedUser = null;
   DB.users = DB.users.filter((user) => {
     if (user.id === id) {
@@ -28,7 +28,7 @@ const deleteById = (id) => {
   if (removedUser) return User.toResponse(removedUser);
   return new Error(`There is no user with ${id} id.`);
 };
-const updateUser = (dataForUpdate) => {
+export const updateUser = (dataForUpdate) => {
   let userForReturn = null;
   DB.users = DB.users.map((user) => {
     if (user.id === dataForUpdate.id) {
@@ -44,5 +44,3 @@ const updateUser = (dataForUpdate) => {
   if (userForReturn) return User.toResponse(userForReturn);
   return new Error(`There is no user with ${dataForUpdate.id} id.`);
 };
-
-module.exports = { getAll, getById, createUser, deleteById, updateUser };

@@ -1,15 +1,15 @@
-const DB = require('../DB');
-const Board = require('./board.model');
+import DB from '../DB';
+import Board from './board.model';
 
-const getAll = () => DB.boards;
+export const getAll = () => DB.boards;
 
-const getById = (id) => DB.boards.find((board) => board.id === id);
-const createBoard = (data) => {
+export const getById = (id) => DB.boards.find((board) => board.id === id);
+export const createBoard = (data) => {
   const newBoard = new Board(data);
   DB.boards.push(newBoard);
   return newBoard;
 };
-const deleteById = (id) => {
+export const deleteById = (id) => {
   let removedBoard = null;
   DB.boards = DB.boards.filter((board) => {
     if (board.id === id) {
@@ -23,7 +23,7 @@ const deleteById = (id) => {
   if (removedBoard) return removedBoard;
   return new Error(`There is no board with ${id} id.`);
 };
-const updateBoard = (dataForUpdate) => {
+export const updateBoard = (dataForUpdate) => {
   let boardForReturn = null;
   DB.boards = DB.boards.map((board) => {
     if (board.id === dataForUpdate.id) {
@@ -41,4 +41,4 @@ const updateBoard = (dataForUpdate) => {
   return new Error(`There is no board with ${dataForUpdate.id} id.`);
 };
 
-module.exports = { getAll, getById, createBoard, deleteById, updateBoard };
+

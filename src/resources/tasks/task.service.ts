@@ -1,15 +1,15 @@
-const DB = require('../DB');
-const Task = require('./task.model');
+import DB from '../DB';
+import Task from './task.model';
 
-const getAll = () => DB.tasks;
+export const getAll = () => DB.tasks;
 
-const getById = (id) => DB.tasks.find((tas) => tas.id === id);
-const createTask = (data) => {
+export const getById = (id) => DB.tasks.find((tas) => tas.id === id);
+export const createTask = (data) => {
   const newTask = new Task(data);
   DB.tasks.push(newTask);
   return newTask;
 };
-const deleteById = (id) => {
+export const deleteById = (id) => {
   let removedTask = null;
   DB.tasks = DB.tasks.filter((task) => {
     if (task.id === id) {
@@ -22,7 +22,7 @@ const deleteById = (id) => {
   if (removedTask) return removedTask;
   return new Error(`There is no task with ${id} id.`);
 };
-const updateTask = (dataForUpdate) => {
+export const updateTask = (dataForUpdate) => {
   let taskForReturn = null;
   DB.tasks = DB.tasks.map((task) => {
     if (task.id === dataForUpdate.id) {
@@ -39,10 +39,3 @@ const updateTask = (dataForUpdate) => {
   return new Error(`There is no task with ${dataForUpdate.id} id.`);
 };
 
-module.exports = {
-  getAll,
-  getById,
-  createTask,
-  deleteById,
-  updateTask,
-};

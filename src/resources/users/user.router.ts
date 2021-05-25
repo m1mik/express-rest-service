@@ -1,17 +1,19 @@
-const router = require('express').Router();
-const { body } = require('express-validator');
-const User = require('./user.model');
-const { validate, isError } = require('../../helpers');
-const usersService = require('./user.service');
+import express from 'express';
+import { body } from 'express-validator';
+import User from './user.model';
+import { validate, isError } from '../../helpers';
+import { getAll, getById, createUser, deleteById, updateUser } from './user.service';
+
+const router = express.Router();
 
 router.route('/').get(async (req, res) => {
-  const users = usersService.getAll();
+  const users = getAll();
   res.json(users.map(User.toResponse));
 });
 
 router.route('/:id').get(async (req, res) => {
   const { id } = req.params;
-  const user = usersService.getById(id);
+  const user = getById(id);
   if (user) return res.status(200).json(User.toResponse(user));
   return res
     .status(404)
@@ -23,20 +25,20 @@ router.post(
   body(['name', 'login', 'password']).exists(),
   validate,
   (req, res) => {
-    res.status(201).json(usersService.createUser(req.body));
+    res.status(201).json(createUser(req.body));
   }
 );
 
 router.delete('/:id', async (req, res) => {
-  const result = usersService.deleteById(req.params.id);
+  const result = deleteById(req.params.id);
   if (isError(result)) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
 router.put('/:id', async (req, res) => {
-  const result = usersService.updateUser({ ...req.body, id: req.params.id });
+  const result = updateUser({ ...req.body, id: req.params.id });
   if (isError(result)) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
-module.exports = router;
+export default router;
