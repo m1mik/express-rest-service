@@ -18,21 +18,24 @@
     "noInlineConfig": true,
     "settings": {
       "import/parsers": {
-        "@typescript-eslint/parser": [".ts"]
+        "@typescript-eslint/parser": [
+          ".ts"
+        ]
       },
       "import/resolver": {
         "node": {
-          "extensions": [".js", ".ts", ".d.ts"]
+          "extensions": [
+            ".js",
+            ".ts",
+            ".d.ts"
+          ]
         }
       },
       "typescript": {}
     }
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:node/recommended",
-    "airbnb-base",
-    "prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "import/extensions": "off",

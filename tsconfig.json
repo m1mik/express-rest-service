@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "es2020",
+    "sourceMap": true,
     "allowJs": false,
     "outDir": "./build",
     "rootDir": "./src",
@@ -20,6 +21,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules/"],
-  "include": ["./src/**/*.ts"]
+  "exclude": [
+    "node_modules/"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
 }
