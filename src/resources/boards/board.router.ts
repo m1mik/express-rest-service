@@ -1,11 +1,14 @@
-import express from 'express';
+import express, { Request } from 'express';
 import { body } from 'express-validator';
 import { validate, isError } from '../../helpers';
+import { Result } from '../../types';
 
 import { getAll, getById, createBoard, deleteById, updateBoard } from './board.service';
 
 const router = express.Router();
-router.get('/', async (req, res) => {
+
+router.get('/', async (req: Request, res) => {
+  console.log(req.method);
   const boards = getAll();
   res.json(boards);
 });
@@ -33,7 +36,7 @@ router.post(
 );
 
 router.delete('/:id', async (req, res) => {
-  const result = deleteById(req.params.id);
+  const result: Result = deleteById(req.params.id);
   if (isError(result)) {
     return res.status(404).json(result);
   }

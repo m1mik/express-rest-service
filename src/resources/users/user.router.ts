@@ -1,12 +1,13 @@
-import express from 'express';
+import express, { Request } from 'express';
 import { body } from 'express-validator';
 import User from './user.model';
 import { validate, isError } from '../../helpers';
 import { getAll, getById, createUser, deleteById, updateUser } from './user.service';
+import { Result } from '../../types';
 
 const router = express.Router();
-
-router.route('/').get(async (req, res) => {
+router.route('/').get(async (req: Request, res) => {
+  console.log(req.method)
   const users = getAll();
   res.json(users.map(User.toResponse));
 });
@@ -30,13 +31,13 @@ router.post(
 );
 
 router.delete('/:id', async (req, res) => {
-  const result = deleteById(req.params.id);
+  const result: Result = deleteById(req.params.id);
   if (isError(result)) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
 router.put('/:id', async (req, res) => {
-  const result = updateUser({ ...req.body, id: req.params.id });
+  const result: Result = updateUser({ ...req.body, id: req.params.id });
   if (isError(result)) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });

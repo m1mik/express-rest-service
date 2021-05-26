@@ -1,15 +1,15 @@
 import DB from '../DB';
 import Task from './task.model';
 
-export const getAll = () => DB.tasks;
+export const getAll = (): Task[] => DB.tasks;
 
-export const getById = (id) => DB.tasks.find((tas) => tas.id === id);
-export const createTask = (data) => {
+export const getById = (id: string): Task | undefined => DB.tasks.find((tas: Task) => tas.id === id);
+export const createTask = (data: { title: string, order: number, description: string }): Task => {
   const newTask = new Task(data);
   DB.tasks.push(newTask);
   return newTask;
 };
-export const deleteById = (id) => {
+export const deleteById = (id: string): Task | Error => {
   let removedTask = null;
   DB.tasks = DB.tasks.filter((task) => {
     if (task.id === id) {
@@ -22,7 +22,7 @@ export const deleteById = (id) => {
   if (removedTask) return removedTask;
   return new Error(`There is no task with ${id} id.`);
 };
-export const updateTask = (dataForUpdate) => {
+export const updateTask = (dataForUpdate: Partial<Task>): Task | Error => {
   let taskForReturn = null;
   DB.tasks = DB.tasks.map((task) => {
     if (task.id === dataForUpdate.id) {

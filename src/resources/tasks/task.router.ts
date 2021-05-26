@@ -1,11 +1,13 @@
-import express from 'express';
+import express, { Request } from 'express';
 import { body } from 'express-validator';
 import { validate, isError } from '../../helpers';
 import { getAll, getById, createTask, deleteById, updateTask } from './task.service';
+import { Result } from '../../types';
 
 const router = express.Router();
-
-router.route('/').get(async (req, res) => {
+// eslint-disable-next-line
+router.route('/').get(async (req: Request, res) => {
+  console.log(req.method);
   const users = getAll();
   res.json(users);
 });
@@ -39,13 +41,13 @@ router.post(
 );
 
 router.delete('/:id', async (req, res) => {
-  const result = deleteById(req.params.id);
+  const result: Result = deleteById(req.params.id);
   if (isError(result)) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
 router.put('/:id', async (req, res) => {
-  const result = updateTask({
+  const result: Result = updateTask({
     ...req.body,
     id: req.params.id,
   });

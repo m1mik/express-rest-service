@@ -9,7 +9,8 @@
   "type": "module",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js",
+    "build": "tsc",
+    "start": "nodemon build/app.js",
     "lint": "eslint --ext .js,.ts --fix src/",
     "test": "cross-env DEBUG=rs:* jest --testMatch \"<rootDir>/test/e2e/test/*.test.js\" --noStackTrace --runInBand",
     "test:auth": "cross-env DEBUG=rs:* TEST_MODE=auth jest --noStackTrace"
@@ -53,7 +54,11 @@
     "yamljs": "0.3.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.12",
     "@types/node": "^15.6.1",
+    "@types/swagger-ui-express": "^4.1.2",
+    "@types/uuid": "^8.3.0",
+    "@types/yamljs": "^0.2.31",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "chai": "4.3.4",

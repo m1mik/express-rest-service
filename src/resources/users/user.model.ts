@@ -1,4 +1,4 @@
-import {v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 export interface UserProps {
   name: string;
@@ -20,7 +20,7 @@ export default class User {
   //   login = 'user',
   //   password = 'P@55w0rd',
   // } = {}
-  constructor(user: User) {
+  constructor(user: { name: string, login: string, password: string }) {
     this.id = uuidv4();
     this.name = user.name;
     this.login = user.login;
