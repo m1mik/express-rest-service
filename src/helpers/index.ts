@@ -4,6 +4,13 @@ import { Request, Response, NextFunction } from 'express';
 const MAX_COLUMN_ORDER = 5;
 const MAX_TASK_ORDER = 5;
 
+/**
+ * request middleware
+ * @param {Request} req - request object
+ * @param {Response} res - response object
+ * @param {NextFunction} next - callback
+ * @returns passing to next middleware-function or response with error
+ */
 export const validate = (
   req: Request,
   res: Response,
@@ -20,6 +27,13 @@ export const validate = (
 
   return next();
 };
+
+/**
+ * set valid order value for Column or Task
+ * @param {number} value - incoming value
+ * @param {string} orderType - incoming model type COLUMN | TASK
+ * @returns {number} - value for order
+ */
 export const setCorrectOrder = (value: number, orderType: string): number => {
   const constType = orderType === 'COLUMN' ? MAX_COLUMN_ORDER : MAX_TASK_ORDER;
   let correctOrder = 0;

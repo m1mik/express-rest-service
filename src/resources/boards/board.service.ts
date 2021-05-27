@@ -2,10 +2,26 @@ import DB from '../DB';
 import Board from './board.model';
 import Column from '../columns/column.model';
 
+/**
+ * returns all Boards
+ * @returns {Board[]}
+ */
 export const getAll = (): Board[] => DB.boards;
 
+/**
+ * returns Board by incoming id or undefined
+ * @param {string} id - incoming board id
+ * @returns {Board} board - founded in DB board
+ * @throws {Error} error - returns error if there is no Board with such id
+ */
 export const getById = (id: string): Board | undefined =>
   DB.boards.find((board: Board) => board.id === id);
+
+/**
+ * creates board based on incoming data
+ * @param {Partial<Board>} data - essential data for new board instance
+ * @returns {Board} board - created board object
+ */
 export const createBoard = (data: {
   title: string;
   columns: Column[];
@@ -14,6 +30,13 @@ export const createBoard = (data: {
   DB.boards.push(newBoard);
   return newBoard;
 };
+
+/**
+ * deletes board by id
+ * @param {string} id - incoming board id for remove
+ * @returns {Board} board - returns deleted object
+ * @throws {Error} error - returns error if there is no board with such id
+ */
 export const deleteById = (id: string): Board | Error => {
   let removedBoard;
   DB.boards = DB.boards.filter((board) => {
@@ -28,6 +51,13 @@ export const deleteById = (id: string): Board | Error => {
   if (removedBoard) return removedBoard;
   return new Error(`There is no board with ${id} id.`);
 };
+
+/**
+ * updates board based on incoming data
+ * @param {Partial<Board>} dataForUpdate - object with new board data
+ * @returns {Board} board - final look of updated board instance
+ * @throws {Error} error - returns error if there is no board with such id
+ */
 export const updateBoard = (dataForUpdate: Partial<Board>): Board | Error => {
   let boardForReturn;
   DB.boards = DB.boards.map((board) => {
