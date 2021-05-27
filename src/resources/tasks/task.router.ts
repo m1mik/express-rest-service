@@ -1,7 +1,13 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
 import { validate, isError } from '../../helpers';
-import { getAll, getById, createTask, deleteById, updateTask } from './task.service';
+import {
+  getAll,
+  getById,
+  createTask,
+  deleteById,
+  updateTask,
+} from './task.service';
 import { Result } from '../../types';
 
 const router = express.Router();
@@ -28,15 +34,13 @@ router.post(
   validate,
   (req, res) => {
     const boardId = `${req.baseUrl}`.split('/')[2];
-    res
-      .status(201)
-      .json(
-        createTask({
-          description: 'Lorem ipsum',
-          ...req.body,
-          boardId,
-        })
-      );
+    res.status(201).json(
+      createTask({
+        description: 'Lorem ipsum',
+        ...req.body,
+        boardId,
+      })
+    );
   }
 );
 

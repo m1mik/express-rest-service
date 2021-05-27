@@ -3,7 +3,13 @@ import { body } from 'express-validator';
 import { validate, isError } from '../../helpers';
 import { Result } from '../../types';
 
-import { getAll, getById, createBoard, deleteById, updateBoard } from './board.service';
+import {
+  getAll,
+  getById,
+  createBoard,
+  deleteById,
+  updateBoard,
+} from './board.service';
 
 const router = express.Router();
 

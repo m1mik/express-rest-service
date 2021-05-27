@@ -2,12 +2,18 @@ import express, { Request } from 'express';
 import { body } from 'express-validator';
 import User from './user.model';
 import { validate, isError } from '../../helpers';
-import { getAll, getById, createUser, deleteById, updateUser } from './user.service';
+import {
+  getAll,
+  getById,
+  createUser,
+  deleteById,
+  updateUser,
+} from './user.service';
 import { Result } from '../../types';
 
 const router = express.Router();
 router.route('/').get(async (req: Request, res) => {
-  console.log(req.method)
+  console.log(req.method);
   const users = getAll();
   res.json(users.map(User.toResponse));
 });

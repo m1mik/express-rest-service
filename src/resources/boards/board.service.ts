@@ -2,11 +2,14 @@ import DB from '../DB';
 import Board from './board.model';
 import Column from '../columns/column.model';
 
-
 export const getAll = (): Board[] => DB.boards;
 
-export const getById = (id: string): Board | undefined => DB.boards.find((board: Board) => board.id === id);
-export const createBoard = (data: { title: string; columns: Column[] }): Board => {
+export const getById = (id: string): Board | undefined =>
+  DB.boards.find((board: Board) => board.id === id);
+export const createBoard = (data: {
+  title: string;
+  columns: Column[];
+}): Board => {
   const newBoard = new Board(data);
   DB.boards.push(newBoard);
   return newBoard;
@@ -26,7 +29,7 @@ export const deleteById = (id: string): Board | Error => {
   return new Error(`There is no board with ${id} id.`);
 };
 export const updateBoard = (dataForUpdate: Partial<Board>): Board | Error => {
-  let boardForReturn = undefined;
+  let boardForReturn;
   DB.boards = DB.boards.map((board) => {
     if (board.id === dataForUpdate.id) {
       const updatedBoard = {
@@ -42,5 +45,3 @@ export const updateBoard = (dataForUpdate: Partial<Board>): Board | Error => {
   if (boardForReturn) return boardForReturn;
   return new Error(`There is no board with ${dataForUpdate.id} id.`);
 };
-
-

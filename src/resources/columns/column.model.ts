@@ -15,12 +15,10 @@ export default class Column {
   //   this.title = title;
   //   this.order = setCorrectOrder(order, 'COLUMN');
   //   this.tasks = tasks.map((tas) => new Task({ ...tas }));
-  constructor(column: { title: string; order: number, tasks: Task[] }) {
+  constructor(column: { title: string; order: number; tasks: Task[] }) {
     this.id = uuidv4();
     this.title = column.title;
     this.order = setCorrectOrder(column.order, 'COLUMN');
     this.tasks = column.tasks;
   }
 }
-
-

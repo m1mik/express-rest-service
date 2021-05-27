@@ -20,7 +20,7 @@ export default class User {
   //   login = 'user',
   //   password = 'P@55w0rd',
   // } = {}
-  constructor(user: { name: string, login: string, password: string }) {
+  constructor(user: { name: string; login: string; password: string }) {
     this.id = uuidv4();
     this.name = user.name;
     this.login = user.login;
@@ -32,4 +32,3 @@ export default class User {
     return { id, name, login };
   }
 }
-

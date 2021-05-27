@@ -8,6 +8,7 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "project": "./tsconfig.json",
     "sourceType": "module",
     "ecmaVersion": 2021,
     "ecmaFeatures": {
@@ -16,26 +17,22 @@
   },
   "settings": {
     "noInlineConfig": true,
+    "paths": ["src"],
+    "node": {
+      "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts"]
+    },
     "settings": {
       "import/parsers": {
-        "@typescript-eslint/parser": [
-          ".ts"
-        ]
-      },
-      "import/resolver": {
-        "node": {
-          "extensions": [
-            ".js",
-            ".ts",
-            ".d.ts"
-          ]
-        }
+        "@typescript-eslint/parser": [".ts"]
       },
       "typescript": {}
     }
   },
   "extends": [
-    "plugin:@typescript-eslint/recommended"
+    "plugin:node/recommended",
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "import/extensions": "off",

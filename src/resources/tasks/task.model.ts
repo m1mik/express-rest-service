@@ -16,7 +16,14 @@ export default class Task {
 
   public columnId?: string | null;
 
-  constructor(task: { title: string; order: number; description: string; userId?: string; boardId?: string, columnId?: string }) {
+  constructor(task: {
+    title: string;
+    order: number;
+    description: string;
+    userId?: string;
+    boardId?: string;
+    columnId?: string;
+  }) {
     this.id = uuidv4();
     this.title = task.title;
     this.order = setCorrectOrder(task.order, 'TASK');
@@ -26,4 +33,3 @@ export default class Task {
     this.columnId = task.columnId || null;
   }
 }
-
