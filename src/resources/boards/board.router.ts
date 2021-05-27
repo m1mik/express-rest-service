@@ -1,7 +1,7 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
-import { validate, isError } from '../../helpers';
-import { Result } from '../../types';
+import { validate } from '../../helpers';
+import Board from './board.model';
 
 import {
   getAll,
@@ -13,8 +13,7 @@ import {
 
 const router = express.Router();
 
-router.get('/', async (req: Request, res) => {
-  console.log(req.method);
+router.get('/', async (_req: Request, res) => {
   const boards = getAll();
   res.json(boards);
 });
@@ -42,8 +41,8 @@ router.post(
 );
 
 router.delete('/:id', async (req, res) => {
-  const result: Result = deleteById(req.params.id);
-  if (isError(result)) {
+  const result: Board | Error = deleteById(req.params.id);
+  if (result instanceof Error) {
     return res.status(404).json(result);
   }
   return res.status(200).json({ message: result });
@@ -61,7 +60,7 @@ router
         ...req.body,
         id: req.params.id,
       });
-      if (isError(result)) return res.status(404).json(result);
+      if (result instanceof Error) return res.status(404).json(result);
       return res.status(200).json({ message: result });
     }
   );

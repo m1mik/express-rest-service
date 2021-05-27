@@ -1,6 +1,6 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
-import { validate, isError } from '../../helpers';
+import { validate } from '../../helpers';
 import {
   getAll,
   getById,
@@ -8,12 +8,11 @@ import {
   deleteById,
   updateTask,
 } from './task.service';
-import { Result } from '../../types';
+import Task from './task.model';
 
 const router = express.Router();
 // eslint-disable-next-line
-router.route('/').get(async (req: Request, res) => {
-  console.log(req.method);
+router.route('/').get(async (_req: Request, res) => {
   const users = getAll();
   res.json(users);
 });
@@ -45,17 +44,17 @@ router.post(
 );
 
 router.delete('/:id', async (req, res) => {
-  const result: Result = deleteById(req.params.id);
-  if (isError(result)) return res.status(404).json(result);
+  const result: Task | Error = deleteById(req.params.id);
+  if (result instanceof Error) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
 router.put('/:id', async (req, res) => {
-  const result: Result = updateTask({
+  const result: Task | Error = updateTask({
     ...req.body,
     id: req.params.id,
   });
-  if (isError(result)) return res.status(404).json(result);
+  if (result instanceof Error) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 

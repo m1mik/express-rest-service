@@ -1,6 +1,5 @@
 import { matchedData, validationResult } from 'express-validator';
 import { Request, Response, NextFunction } from 'express';
-import { Result } from '../types';
 
 const MAX_COLUMN_ORDER = 5;
 const MAX_TASK_ORDER = 5;
@@ -21,7 +20,6 @@ export const validate = (
 
   return next();
 };
-export const isError = (result: Result): boolean => result instanceof Error;
 export const setCorrectOrder = (value: number, orderType: string): number => {
   const constType = orderType === 'COLUMN' ? MAX_COLUMN_ORDER : MAX_TASK_ORDER;
   let correctOrder = 0;

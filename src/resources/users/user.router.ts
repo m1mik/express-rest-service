@@ -1,7 +1,7 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
 import User from './user.model';
-import { validate, isError } from '../../helpers';
+import { validate } from '../../helpers';
 import {
   getAll,
   getById,
@@ -9,11 +9,9 @@ import {
   deleteById,
   updateUser,
 } from './user.service';
-import { Result } from '../../types';
 
 const router = express.Router();
-router.route('/').get(async (req: Request, res) => {
-  console.log(req.method);
+router.route('/').get(async (_req: Request, res) => {
   const users = getAll();
   res.json(users.map(User.toResponse));
 });
@@ -37,14 +35,17 @@ router.post(
 );
 
 router.delete('/:id', async (req, res) => {
-  const result: Result = deleteById(req.params.id);
-  if (isError(result)) return res.status(404).json(result);
+  const result: Partial<User> | Error = deleteById(req.params.id);
+  if (result instanceof Error) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
 router.put('/:id', async (req, res) => {
-  const result: Result = updateUser({ ...req.body, id: req.params.id });
-  if (isError(result)) return res.status(404).json(result);
+  const result: Partial<User> | Error = updateUser({
+    ...req.body,
+    id: req.params.id,
+  });
+  if (result instanceof Error) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
