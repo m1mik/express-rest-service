@@ -10,8 +10,7 @@ import {
 } from './task.service';
 import Task from './task.model';
 
-const router = express.Router();
-// eslint-disable-next-line
+const router = express.Router({ mergeParams: true });
 router.route('/').get(async (_req: Request, res) => {
   const users = getAll();
   res.json(users);

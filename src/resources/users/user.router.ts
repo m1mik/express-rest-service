@@ -10,7 +10,7 @@ import {
   updateUser,
 } from './user.service';
 
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 router.route('/').get(async (_req: Request, res) => {
   const users = getAll();
   res.json(users.map(User.toResponse));

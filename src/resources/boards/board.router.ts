@@ -2,6 +2,7 @@ import express, { Request } from 'express';
 import { body } from 'express-validator';
 import { validate } from '../../helpers';
 import Board from './board.model';
+import loggerActor from '../../logger';
 
 import {
   getAll,
@@ -11,16 +12,16 @@ import {
   updateBoard,
 } from './board.service';
 
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 
-router.get('/', async (_req: Request, res) => {
+router.get('/', loggerActor, async (_req: Request, res) => {
   const boards = getAll();
   res.json(boards);
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', loggerActor, async (req, res) => {
   const { id } = req.params;
-  const board = getById(id);
+  const board = getById(id || '');
   if (board) return res.status(200).json(board);
   return res
     .status(404)
@@ -29,6 +30,7 @@ router.get('/:id', async (req, res) => {
 
 router.post(
   '/',
+  loggerActor,
   body('id').optional().isUUID(),
   body('title').exists(),
   body('columns').optional().isArray(),
@@ -40,8 +42,10 @@ router.post(
   }
 );
 
-router.delete('/:id', async (req, res) => {
-  const result: Board | Error = deleteById(req.params.id);
+router.delete('/:id', loggerActor, async (req, res) => {
+  const { params } = req;
+  const { id } = params;
+  const result: Board | Error = deleteById(id as string);
   if (result instanceof Error) {
     return res.status(404).json(result);
   }
@@ -51,6 +55,7 @@ router.delete('/:id', async (req, res) => {
 router
   .route('/:id')
   .put(
+    loggerActor,
     body('columns').optional().isArray(),
     body('columns.*.title').exists(),
     body('columns.*.order').exists().isNumeric(),
