@@ -3,6 +3,7 @@ import { body } from 'express-validator';
 import { validate } from '../../helpers';
 import Board from './board.model';
 import loggerActor from '../../logger';
+import { CustomError } from '../../types';
 
 import {
   getAll,
@@ -17,6 +18,14 @@ const router = express.Router({ mergeParams: true });
 router.get('/', loggerActor, async (_req: Request, res) => {
   const boards = getAll();
   res.json(boards);
+});
+
+router.get('/test', (_req, _res, next) => {
+  try {
+    throw new CustomError(666, 'error');
+  } catch (e) {
+    next(e);
+  }
 });
 
 router.get('/:id', loggerActor, async (req, res) => {

@@ -9,16 +9,17 @@ import {
   deleteById,
   updateUser,
 } from './user.service';
+import loggerActor from '../../logger';
 
 const router = express.Router({ mergeParams: true });
-router.route('/').get(async (_req: Request, res) => {
+router.get('/', loggerActor, async (_req: Request, res) => {
   const users = getAll();
   res.json(users.map(User.toResponse));
 });
 
-router.route('/:id').get(async (req, res) => {
+router.get('/:id', loggerActor, async (req, res) => {
   const { id } = req.params;
-  const user = getById(id);
+  const user = getById(id as string);
   if (user) return res.status(200).json(User.toResponse(user));
   return res
     .status(404)
@@ -27,6 +28,7 @@ router.route('/:id').get(async (req, res) => {
 
 router.post(
   '/',
+  loggerActor,
   body(['name', 'login', 'password']).exists(),
   validate,
   (req, res) => {
@@ -34,16 +36,20 @@ router.post(
   }
 );
 
-router.delete('/:id', async (req, res) => {
-  const result: Partial<User> | Error = deleteById(req.params.id);
+router.delete('/:id', loggerActor, async (req, res) => {
+  const { params } = req;
+  const { id } = params;
+  const result: Partial<User> | Error = deleteById(id as string);
   if (result instanceof Error) return res.status(404).json(result);
   return res.status(200).json({ message: result });
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', loggerActor, async (req, res) => {
+  const { params } = req;
+  const { id } = params;
   const result: Partial<User> | Error = updateUser({
     ...req.body,
-    id: req.params.id,
+    id,
   });
   if (result instanceof Error) return res.status(404).json(result);
   return res.status(200).json({ message: result });

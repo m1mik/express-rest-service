@@ -14,17 +14,23 @@ class Logger {
     this.winston = winstonInstance;
   }
 
-  public logUrl = (): void =>
+  public logUrl = (): void => {
+    process.stdout.write(
+      `info: url: ${this.request.baseUrl}${this.request.path}.\n`
+    );
     this.winston.log({
       level: 'info',
-      message: `url: ${this.request.baseUrl}${this.request.path}.`,
+      message: `url: ${this.request.baseUrl}${this.request.path}.\n`,
     });
+  };
 
-  public logMethod = (): void =>
+  public logMethod = (): void => {
+    process.stdout.write(`info: method: ${this.request.method}.\n`);
     this.winston.log({
       level: 'info',
       message: `method: ${this.request.method}.`,
     });
+  };
 
   public logParams = (): void => {
     let finalString = '';
@@ -32,11 +38,13 @@ class Logger {
       for (const [param, value] of Object.entries(this.request.params)) {
         finalString += `${param}: ${value}`;
       }
+      process.stdout.write(`info: params: ${finalString}.\n`);
       this.winston.log({
         message: `params: ${finalString}.`,
         level: 'info',
       });
     } else {
+      process.stdout.write(`info: Request has no params.\n`);
       this.winston.log({
         message: `Request has no params.`,
         level: 'info',
@@ -50,11 +58,13 @@ class Logger {
       for (const [param, value] of Object.entries(this.request.query)) {
         finalString += `${param}: ${value}`;
       }
+      process.stdout.write(`info: query params: ${finalString}.\n`);
       this.winston.log({
         message: `query params: ${finalString}.`,
         level: 'info',
       });
     } else {
+      process.stdout.write(`info: Request has no query params.\n`);
       this.winston.log({
         message: `Request has no query params.`,
         level: 'info',
@@ -62,30 +72,39 @@ class Logger {
     }
   };
 
-  public logBody = (): void =>
+  public logBody = (): void => {
+    process.stdout.write(`info: body: ${JSON.stringify(this.request.body)}.\n`);
     this.winston.log({
-      message: `${this.request.body}.`,
+      message: `${JSON.stringify(this.request.body)}.`,
       level: 'info',
     });
+  };
 
-  public separate = (): void =>
+  public separate = (): void => {
+    process.stdout.write(`info: -------------------------\n`);
     this.winston.log({ level: 'info', message: '-------------------------' });
+  };
 
-  public showDate = (): void =>
+  public showDate = (): void => {
+    process.stdout.write(`info: ${new Date().toISOString()}\n`);
     this.winston.log({ level: 'info', message: `${new Date().toISOString()}` });
+  };
 }
 
 export const winstonInstance: Winston = winLog.createLogger({
   level: 'info',
   format: winLog.format.simple(),
   transports: [
-    new winLog.transports.File({ filename: 'errors.log', level: 'error' }),
     new winLog.transports.File({
-      filename: 'exceptions.log',
+      filename: './logs/errors.log',
+      level: 'error',
+    }),
+    new winLog.transports.File({
+      filename: './logs/exceptions.log',
       level: 'emerg',
     }),
-    new winLog.transports.File({ filename: 'main.log', level: 'info' }),
-    new winLog.transports.Console(),
+    new winLog.transports.File({ filename: './logs/main.log', level: 'info' }),
+    // new winLog.transports.Console(),
   ],
 });
 
@@ -100,6 +119,7 @@ const loggerActor = (
   logger.logMethod();
   logger.logParams();
   logger.logQueryParams();
+  logger.logBody();
   logger.separate();
   next();
 };

@@ -46,3 +46,18 @@ export const setCorrectOrder = (value: number, orderType: string): number => {
   }
   return correctOrder;
 };
+
+export const errorMiddleware = (
+  err: { code: number; message: string },
+  _req: Request,
+  res: Response,
+  // eslint-disable-next-line
+  _next: NextFunction
+  // eslint-disable-next-line
+): Response<any, Record<string, any>> => {
+  const { code, message } = err;
+  return res.status(code).json({
+    status: 'custom error middleware',
+    message,
+  });
+};
