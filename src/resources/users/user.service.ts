@@ -1,5 +1,6 @@
 import DB from '../DB';
 import User from './user.model';
+import { CustomError } from '../../types';
 
 /**
  * returns all Users
@@ -37,7 +38,7 @@ export const createUser = (data: {
  * @returns {User} user - returns deleted object
  * @throws {Error} error - returns error if there is no user with such id
  */
-export const deleteById = (id: string): Partial<User> | Error => {
+export const deleteById = (id: string): Partial<User> => {
   let removedUser = null;
   DB.users = DB.users.filter((user) => {
     if (user.id === id) {
@@ -54,7 +55,7 @@ export const deleteById = (id: string): Partial<User> | Error => {
     return true;
   });
   if (removedUser) return User.toResponse(removedUser);
-  return new Error(`There is no user with ${id} id.`);
+  throw new CustomError(404, `There is no user with ${id} id.`);
 };
 
 /**
@@ -79,5 +80,5 @@ export const updateUser = (
     return user;
   });
   if (userForReturn) return User.toResponse(userForReturn);
-  return new Error(`There is no user with ${dataForUpdate.id} id.`);
+  throw new CustomError(404, `There is no user with ${dataForUpdate.id} id.`);
 };

@@ -28,13 +28,19 @@ router.get('/test', (_req, _res, next) => {
   }
 });
 
-router.get('/:id', loggerActor, async (req, res) => {
+router.get('/:id', loggerActor, async (req, res, next) => {
   const { id } = req.params;
-  const board = getById(id || '');
-  if (board) return res.status(200).json(board);
-  return res
-    .status(404)
-    .json({ message: `There is no board with such (${id}) id.` });
+  try {
+    const board = getById(id || '');
+    if (board) return res.status(200).json(board);
+    throw new CustomError(404, `There is no board with such (${id}) id.`);
+  } catch (e) {
+    next(e);
+  }
+  return {};
+  // return res
+  //   .status(404)
+  //   .json({ message: `There is no board with such (${id}) id.` });
 });
 
 router.post(
@@ -51,14 +57,16 @@ router.post(
   }
 );
 
-router.delete('/:id', loggerActor, async (req, res) => {
+router.delete('/:id', loggerActor, async (req, res, next) => {
   const { params } = req;
   const { id } = params;
-  const result: Board | Error = deleteById(id as string);
-  if (result instanceof Error) {
-    return res.status(404).json(result);
+  try {
+    const result: Board = deleteById(id as string);
+    return res.status(200).json({ message: result });
+  } catch (e) {
+    next(e);
   }
-  return res.status(200).json({ message: result });
+  return {};
 });
 
 router
@@ -69,13 +77,17 @@ router
     body('columns.*.title').exists(),
     body('columns.*.order').exists().isNumeric(),
     body('columns.*.id').optional().isUUID(),
-    async (req, res) => {
-      const result = updateBoard({
-        ...req.body,
-        id: req.params.id,
-      });
-      if (result instanceof Error) return res.status(404).json(result);
-      return res.status(200).json({ message: result });
+    async (req, res, next) => {
+      try {
+        const result = updateBoard({
+          ...req.body,
+          id: req.params.id,
+        });
+        return res.status(200).json({ message: result });
+      } catch (e) {
+        next(e);
+      }
+      return {};
     }
   );
 
