@@ -1,16 +1,26 @@
-const router = require('express').Router();
-const { body } = require('express-validator');
-const { validate, isError } = require('../../helpers');
-const boardsService = require('./board.service');
+import express, { Request } from 'express';
+import { body } from 'express-validator';
+import { validate } from '../../helpers';
+import Board from './board.model';
 
-router.get('/', async (req, res) => {
-  const boards = boardsService.getAll();
+import {
+  getAll,
+  getById,
+  createBoard,
+  deleteById,
+  updateBoard,
+} from './board.service';
+
+const router = express.Router();
+
+router.get('/', async (_req: Request, res) => {
+  const boards = getAll();
   res.json(boards);
 });
 
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
-  const board = boardsService.getById(id);
+  const board = getById(id);
   if (board) return res.status(200).json(board);
   return res
     .status(404)
@@ -26,13 +36,13 @@ router.post(
   body('columns.*.order').exists().isNumeric(),
   validate,
   async (req, res) => {
-    res.status(201).json(boardsService.createBoard(req.body));
+    res.status(201).json(createBoard(req.body));
   }
 );
 
 router.delete('/:id', async (req, res) => {
-  const result = boardsService.deleteById(req.params.id);
-  if (isError(result)) {
+  const result: Board | Error = deleteById(req.params.id);
+  if (result instanceof Error) {
     return res.status(404).json(result);
   }
   return res.status(200).json({ message: result });
@@ -46,13 +56,13 @@ router
     body('columns.*.order').exists().isNumeric(),
     body('columns.*.id').optional().isUUID(),
     async (req, res) => {
-      const result = boardsService.updateBoard({
+      const result = updateBoard({
         ...req.body,
         id: req.params.id,
       });
-      if (isError(result)) return res.status(404).json(result);
+      if (result instanceof Error) return res.status(404).json(result);
       return res.status(200).json({ message: result });
     }
   );
 
-module.exports = router;
+export default router;
