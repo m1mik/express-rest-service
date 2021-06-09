@@ -1,5 +1,21 @@
 version: '3'
 services:
+  postgres:
+    image: postgres:13.3
+    ports:
+      - '5433:5433'
+    # environment:
+    #   - POSTGRES_DB=hello_db
+    #   - POSTGRES_USER=myuser
+    env_file:
+      - ./database/.env
+    volumes:
+      - .:/docker-entrypoint-initdb.d
+    networks:
+      - gateway
+    deploy:
+      restart_policy:
+        condition: on-failure
   server:
     build: .
     depends_on:
@@ -17,16 +33,5 @@ services:
     tty: true
     volumes:
       - './:/usr/src/my-express-server-logs'
-  postgres:
-    build: ./database
-    ports:
-      - '5433:5433'
-    env_file:
-      - ./database/.env
-    networks:
-      - gateway
-    deploy:
-      restart_policy:
-        condition: on-failure
 networks:
   gateway: {}
