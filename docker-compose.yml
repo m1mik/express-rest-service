@@ -1,6 +1,6 @@
 version: '3'
 services:
-  express-rest-service:
+  server:
     build: .
     depends_on:
       - postgres
@@ -8,9 +8,25 @@ services:
       - .env
     ports:
       - '4000:4000'
+    networks:
+      - gateway
+    deploy:
+      restart_policy:
+        condition: on-failure
+    stdin_open: true
+    tty: true
+    volumes:
+      - './:/usr/src/my-express-server-logs'
   postgres:
     build: ./database
     ports:
       - '5433:5433'
     env_file:
       - ./database/.env
+    networks:
+      - gateway
+    deploy:
+      restart_policy:
+        condition: on-failure
+networks:
+  gateway: {}

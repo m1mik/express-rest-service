@@ -77,3 +77,8 @@ npm run lint
 Press <kbd>F5</kbd> to debug.
 
 For more information, visit: https://code.visualstudio.com/docs/editor/debugging
+
+##### docker shortcuts
+
+`docker-compose exec <app-name (e.g. "server")> sh` open bash (container cli)
+`ctrl+c ctrl+d` close bash
