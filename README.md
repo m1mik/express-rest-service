@@ -20,7 +20,14 @@ npm install
 ## Running application
 
 ```
-npm start
+npm run build
+npm run start
+```
+
+## Running via docker
+
+```
+docker-compose up
 ```
 
 After starting the app on port (4000 as default) you can open
