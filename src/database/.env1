@@ -1,0 +1,2 @@
+POSTGRES_DB=hello_db
+POSTGRES_USER=myuser

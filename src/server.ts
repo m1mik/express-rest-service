@@ -1,5 +1,6 @@
 // import { Sequelize } from 'sequelize';
 import { PORT } from './common/config';
+import { sequelize } from './database';
 
 import app from './app';
 
@@ -9,6 +10,11 @@ import app from './app';
 
 app.listen(PORT, async () => {
   console.log(`App is running on http://localhost:${PORT}`);
+  sequelize
+    .sync()
+    .then(() => console.log('DB sync success'))
+    .catch((e) => console.log(`DB sync failed.\n${e}`));
+
   // try {
   //   await sequelize.authenticate();
   //   console.log('Connection has been established successfully.');

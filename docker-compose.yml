@@ -3,35 +3,38 @@ services:
   postgres:
     image: postgres:13.3
     ports:
-      - '5433:5433'
+      - '5432:5432'
     # environment:
-    #   - POSTGRES_DB=hello_db
-    #   - POSTGRES_USER=myuser
+    #   - POSTGRES_DB: postgres
+    #   - POSTGRES_USER: 'postgres'
     env_file:
-      - ./database/.env
+      - .env
     volumes:
-      - .:/docker-entrypoint-initdb.d
-    networks:
-      - gateway
-    deploy:
-      restart_policy:
-        condition: on-failure
+      - exp-serv-db:/var/lib/postgresql/data
+    # deploy:
+    #   restart_policy:
+    #     condition: on-failure
   server:
-    build: .
+    build:
+      context: .
     depends_on:
       - postgres
     env_file:
       - .env
+    # environment:
+    #   DB_SCHEMA: postgres
+    #   DB_USER: postgres
+    #   DB_PASSWORD: postgres
+    #   DB_HOST: postgres
     ports:
       - '4000:4000'
-    networks:
-      - gateway
-    deploy:
-      restart_policy:
-        condition: on-failure
+    # deploy:
+    #   restart_policy:
+    #     condition: on_failure
     stdin_open: true
     tty: true
     volumes:
-      - './:/usr/src/my-express-server-logs'
-networks:
-  gateway: {}
+      - './:/user/src/my-express-server-logs'
+
+volumes:
+  exp-serv-db:
