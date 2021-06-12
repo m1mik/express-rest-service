@@ -10,6 +10,8 @@ COPY test ./test
 
 RUN npm install
 
+COPY ormconfig.docker.json ./ormconfig.json
+
 EXPOSE 4000
 
 CMD [ "npm", "run", "build" ]

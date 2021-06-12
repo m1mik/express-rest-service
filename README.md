@@ -80,11 +80,7 @@ For more information, visit: https://code.visualstudio.com/docs/editor/debugging
 
 ##### docker shortcuts
 
-`docker-compose exec <app-name (e.g. "server")> sh` open bash (container cli)
+`docker build -t server-image .` build web-app image
+`docker exec -ti <app-name (e.g. "server")> sh | bash` open bash (container cli)
 `ctrl+c ctrl+d` close bash
 `docker rm|stop|kill $(docker ps -a -q)`
-`docker run -it -e "POSTGRES_HOST_AUTH_METHOD=trust" -p 5432:5432 postgres` original
-`docker run -it -e "POSTGRES_PASSWORD=password" -p 5432:5432 postgres` updated
-
-`psql -v ON_ERROR_STOP=1 -U "$POSTGRES_USER" -d "$POSTGRES_DB" <<-EOSQL` original
-`psql -v ON_ERROR_STOP=1 -U "$POSTGRES_USER" -d postgres <<-EOSQL` updated

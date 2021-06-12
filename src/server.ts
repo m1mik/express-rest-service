@@ -1,6 +1,7 @@
 // import { Sequelize } from 'sequelize';
+import { createConnection } from 'typeorm';
 import { PORT } from './common/config';
-import { sequelize } from './database';
+// import { sequelize } from './database';
 
 import app from './app';
 
@@ -10,11 +11,24 @@ import app from './app';
 
 app.listen(PORT, async () => {
   console.log(`App is running on http://localhost:${PORT}`);
-  sequelize
-    .sync()
-    .then(() => console.log('DB sync success'))
-    .catch((e) => console.log(`DB sync failed.\n${e}`));
-
+  // sequelize
+  //   .sync()
+  //   .then(() => console.log('DB sync success'))
+  //   .catch((e) => console.log(`DB sync failed.\n${e}`));
+  let retries = 5;
+  while (retries) {
+    try {
+      // eslint-disable-next-line
+      await createConnection();
+      console.log('typeorm connection SUCCESS!!!!');
+      break;
+    } catch (e) {
+      console.log('typeorm connection failed');
+      retries -= 1;
+      // eslint-disable-next-line
+      await new Promise((res) => setTimeout(res, 3000));
+    }
+  }
   // try {
   //   await sequelize.authenticate();
   //   console.log('Connection has been established successfully.');

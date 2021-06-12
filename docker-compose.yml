@@ -1,40 +1,18 @@
 version: '3'
 services:
-  postgres:
-    image: postgres:13.3
-    ports:
-      - '5432:5432'
-    # environment:
-    #   - POSTGRES_DB: postgres
-    #   - POSTGRES_USER: 'postgres'
+  db:
+    image: postgres
     env_file:
       - .env
+    ports:
+      - ${DB_PORT}:${DB_PORT}
     volumes:
-      - exp-serv-db:/var/lib/postgresql/data
-    # deploy:
-    #   restart_policy:
-    #     condition: on-failure
-  server:
-    build:
-      context: .
+      - ./pgdata:/var/lib/postgresql/data
+  web:
+    image: server-image
     depends_on:
-      - postgres
+      - db
     env_file:
       - .env
-    # environment:
-    #   DB_SCHEMA: postgres
-    #   DB_USER: postgres
-    #   DB_PASSWORD: postgres
-    #   DB_HOST: postgres
     ports:
-      - '4000:4000'
-    # deploy:
-    #   restart_policy:
-    #     condition: on_failure
-    stdin_open: true
-    tty: true
-    volumes:
-      - './:/user/src/my-express-server-logs'
-
-volumes:
-  exp-serv-db:
+      - ${SERVER_PORT}:${SERVER_PORT}
