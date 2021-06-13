@@ -22,8 +22,8 @@ services:
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
     volumes:
-      - ./logs:/usr/app/logs
-      - ./src:/usr/app/src
+      # - ./logs:/usr/app/logs
+      - '../test dir:/usr/src/app/logs'
     networks:
       - my-network
     deploy:
