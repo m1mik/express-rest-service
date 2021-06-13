@@ -10,6 +10,9 @@ services:
       - my-network
     volumes:
       - ./pgdata:/var/lib/postgresql/data
+    deploy:
+      restart_policy:
+        condition: on-failure
   web:
     image: server-image
     depends_on:
@@ -18,8 +21,14 @@ services:
       - .env
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - ./logs:/usr/app/logs
+      - ./src:/usr/app/src
     networks:
       - my-network
+    deploy:
+      restart_policy:
+        condition: on-failure
 networks:
   my-network:
     driver: bridge

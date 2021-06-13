@@ -4,6 +4,7 @@ import { winstonInstance } from '../logger';
 
 const MAX_COLUMN_ORDER = 5;
 const MAX_TASK_ORDER = 5;
+console.log('hey');
 
 /**
  * request middleware
