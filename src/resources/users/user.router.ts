@@ -9,24 +9,30 @@ import {
   deleteById,
   updateUser,
 } from './user.service';
+import loggerActor from '../../logger';
+import { CustomError } from '../../types';
 
-const router = express.Router();
-router.route('/').get(async (_req: Request, res) => {
+const router = express.Router({ mergeParams: true });
+router.get('/', loggerActor, async (_req: Request, res) => {
   const users = getAll();
   res.json(users.map(User.toResponse));
 });
 
-router.route('/:id').get(async (req, res) => {
+router.get('/:id', loggerActor, async (req, res, next) => {
   const { id } = req.params;
-  const user = getById(id);
-  if (user) return res.status(200).json(User.toResponse(user));
-  return res
-    .status(404)
-    .json({ message: `There is no user with such (${id}) id.` });
+  try {
+    const user = getById(id as string);
+    if (user) return res.status(200).json(User.toResponse(user));
+    throw new CustomError(404, `There is no user with such (${id}) id.`);
+  } catch (e) {
+    next(e);
+  }
+  return {};
 });
 
 router.post(
   '/',
+  loggerActor,
   body(['name', 'login', 'password']).exists(),
   validate,
   (req, res) => {
@@ -34,19 +40,31 @@ router.post(
   }
 );
 
-router.delete('/:id', async (req, res) => {
-  const result: Partial<User> | Error = deleteById(req.params.id);
-  if (result instanceof Error) return res.status(404).json(result);
-  return res.status(200).json({ message: result });
+router.delete('/:id', loggerActor, async (req, res, next) => {
+  const { params } = req;
+  const { id } = params;
+  try {
+    const result: Partial<User> = deleteById(id as string);
+    return res.status(200).json({ message: result });
+  } catch (e) {
+    next(e);
+  }
+  return {};
 });
 
-router.put('/:id', async (req, res) => {
-  const result: Partial<User> | Error = updateUser({
-    ...req.body,
-    id: req.params.id,
-  });
-  if (result instanceof Error) return res.status(404).json(result);
-  return res.status(200).json({ message: result });
+router.put('/:id', loggerActor, async (req, res, next) => {
+  const { params } = req;
+  const { id } = params;
+  try {
+    const result: Partial<User> | Error = updateUser({
+      ...req.body,
+      id,
+    });
+    return res.status(200).json({ message: result });
+  } catch (e) {
+    next(e);
+  }
+  return {};
 });
 
 export default router;

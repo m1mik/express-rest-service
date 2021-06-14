@@ -1,5 +1,6 @@
 import DB from '../DB';
 import Task from './task.model';
+import { CustomError } from '../../types';
 
 /**
  * returns all Tasks
@@ -37,7 +38,7 @@ export const createTask = (data: {
  * @returns {Task} task - returns deleted object
  * @throws {Error} error - returns error if there is no task with such id
  */
-export const deleteById = (id: string): Task | Error => {
+export const deleteById = (id: string): Task => {
   let removedTask = null;
   DB.tasks = DB.tasks.filter((task) => {
     if (task.id === id) {
@@ -48,7 +49,7 @@ export const deleteById = (id: string): Task | Error => {
     return true;
   });
   if (removedTask) return removedTask;
-  return new Error(`There is no task with ${id} id.`);
+  throw new CustomError(404, `There is no task with ${id} id.`);
 };
 
 /**
@@ -57,7 +58,7 @@ export const deleteById = (id: string): Task | Error => {
  * @returns {Task} task - final look of updated task instance
  * @throws {Error} error - returns error if there is no task with such id
  */
-export const updateTask = (dataForUpdate: Partial<Task>): Task | Error => {
+export const updateTask = (dataForUpdate: Partial<Task>): Task => {
   let taskForReturn = null;
   DB.tasks = DB.tasks.map((task) => {
     if (task.id === dataForUpdate.id) {
@@ -71,5 +72,5 @@ export const updateTask = (dataForUpdate: Partial<Task>): Task | Error => {
     return task;
   });
   if (taskForReturn) return taskForReturn;
-  return new Error(`There is no task with ${dataForUpdate.id} id.`);
+  throw new CustomError(404, `There is no task with ${dataForUpdate.id} id.`);
 };

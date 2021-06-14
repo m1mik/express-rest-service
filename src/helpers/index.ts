@@ -1,5 +1,6 @@
 import { matchedData, validationResult } from 'express-validator';
 import { Request, Response, NextFunction } from 'express';
+import { winstonInstance } from '../logger';
 
 const MAX_COLUMN_ORDER = 5;
 const MAX_TASK_ORDER = 5;
@@ -45,4 +46,20 @@ export const setCorrectOrder = (value: number, orderType: string): number => {
     correctOrder = value;
   }
   return correctOrder;
+};
+
+export const errorMiddleware = (
+  err: { code: number; message: string },
+  _req: Request,
+  res: Response,
+  // eslint-disable-next-line
+  _next: NextFunction
+  // eslint-disable-next-line
+): Response<any, Record<string, any>> => {
+  const { code, message } = err;
+  winstonInstance.log({ level: 'error', message });
+  return res.status(code).json({
+    status: 'custom error middleware',
+    message,
+  });
 };

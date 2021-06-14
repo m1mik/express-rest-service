@@ -50,6 +50,8 @@
     "express-validator": "^6.11.1",
     "swagger-ui-express": "4.1.6",
     "uuid": "8.3.2",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0",
     "yamljs": "0.3.0"
   },
   "devDependencies": {

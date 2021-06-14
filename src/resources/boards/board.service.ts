@@ -1,6 +1,7 @@
 import DB from '../DB';
 import Board from './board.model';
 import Column from '../columns/column.model';
+import { CustomError } from '../../types';
 
 /**
  * returns all Boards
@@ -37,7 +38,7 @@ export const createBoard = (data: {
  * @returns {Board} board - returns deleted object
  * @throws {Error} error - returns error if there is no board with such id
  */
-export const deleteById = (id: string): Board | Error => {
+export const deleteById = (id: string): Board => {
   let removedBoard;
   DB.boards = DB.boards.filter((board) => {
     if (board.id === id) {
@@ -49,7 +50,7 @@ export const deleteById = (id: string): Board | Error => {
     return true;
   });
   if (removedBoard) return removedBoard;
-  return new Error(`There is no board with ${id} id.`);
+  throw new CustomError(404, `There is no board with ${id} id.`);
 };
 
 /**
@@ -58,7 +59,7 @@ export const deleteById = (id: string): Board | Error => {
  * @returns {Board} board - final look of updated board instance
  * @throws {Error} error - returns error if there is no board with such id
  */
-export const updateBoard = (dataForUpdate: Partial<Board>): Board | Error => {
+export const updateBoard = (dataForUpdate: Partial<Board>): Board => {
   let boardForReturn;
   DB.boards = DB.boards.map((board) => {
     if (board.id === dataForUpdate.id) {
@@ -73,5 +74,5 @@ export const updateBoard = (dataForUpdate: Partial<Board>): Board | Error => {
   });
 
   if (boardForReturn) return boardForReturn;
-  return new Error(`There is no board with ${dataForUpdate.id} id.`);
+  throw new CustomError(404, `There is no board with ${dataForUpdate.id} id.`);
 };
