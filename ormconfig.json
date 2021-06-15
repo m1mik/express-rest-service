@@ -1,11 +1,24 @@
 {
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "postgres",
-    "password": "postgres",
-    "database": "stripe-example",
-    "synchronize": true,
-    "logging": false
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "stripe-example",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "database/entities/*.ts"
+  ],
+  "migrations": [
+    "database/migrations/*.ts"
+  ],
+  "subscribers": [
+    "database/subscribers/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "database/entities",
+    "migrationsDir": "database/migrations",
+    "subscribersDir": "database/subscribers"
   }
-  
+}

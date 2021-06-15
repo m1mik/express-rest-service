@@ -7,6 +7,7 @@ import boardRouter from './resources/boards/board.router';
 import taskRouter from './resources/tasks/task.router';
 import { winstonInstance as logger } from './logger';
 import { errorMiddleware } from './helpers';
+import 'reflect-metadata';
 
 process.on('uncaughtException', (err: Error, origin: string) => {
   process.stderr.write(
