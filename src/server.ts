@@ -15,7 +15,7 @@ app.listen(PORT, async () => {
   //   .sync()
   //   .then(() => console.log('DB sync success'))
   //   .catch((e) => console.log(`DB sync failed.\n${e}`));
-  let retries = 5;
+  let retries = 20;
   while (retries) {
     try {
       // eslint-disable-next-line
@@ -26,7 +26,7 @@ app.listen(PORT, async () => {
       console.log('typeorm connection failed');
       retries -= 1;
       // eslint-disable-next-line
-      await new Promise((res) => setTimeout(res, 3000));
+      await new Promise((res) => setTimeout(res, 5000));
     }
   }
   // try {

@@ -10,6 +10,7 @@ services:
       - my-network
     volumes:
       - ./pgdata:/var/lib/postgresql/data
+      - ./database/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
     deploy:
       restart_policy:
         condition: on-failure

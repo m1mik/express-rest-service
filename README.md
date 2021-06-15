@@ -80,6 +80,7 @@ For more information, visit: https://code.visualstudio.com/docs/editor/debugging
 
 ##### docker shortcuts
 
+`docker system prune -a` remove all docker resources
 `docker build -t server-image .` build web-app image
 `docker exec -ti <app-name (e.g. "server")> sh | bash` open bash (container cli)
 `ctrl+c ctrl+d` close bash
