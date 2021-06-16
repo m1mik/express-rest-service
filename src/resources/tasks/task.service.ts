@@ -1,6 +1,7 @@
 import DB from '../DB';
 import Task from './task.model';
 import { CustomError } from '../../types';
+import Column from '../columns/column.model';
 
 /**
  * returns all Tasks
@@ -26,6 +27,7 @@ export const createTask = (data: {
   title: string;
   order: number;
   description: string;
+  column: Column;
 }): Task => {
   const newTask = new Task(data);
   DB.tasks.push(newTask);

@@ -43,7 +43,7 @@ export const deleteById = (id: string): Board => {
   DB.boards = DB.boards.filter((board) => {
     if (board.id === id) {
       removedBoard = board;
-      DB.tasks = DB.tasks.filter((tas) => tas.boardId !== id);
+      DB.tasks = DB.tasks.filter((tas) => tas.board.id !== id);
 
       return false;
     }

@@ -1,18 +1,35 @@
+import {
+  OneToMany,
+  Entity,
+  PrimaryGeneratedColumn,
+  Column as OrmColumn,
+} from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
+// eslint-disable-next-line import/no-cycle
+import Task from '../tasks/task.model';
 
 export interface UserProps {
   name: string;
   login: string;
   password: string;
 }
+
+@Entity()
 export default class User {
+  @PrimaryGeneratedColumn('uuid')
   public id: string;
 
+  @OrmColumn()
   public name: string;
 
+  @OrmColumn()
   public login: string;
 
+  @OrmColumn()
   public password: string;
+
+  @OneToMany(() => Task, (task) => task.user)
+  public tasks: Task[];
 
   // {
   //   id = uuidv4(),
@@ -25,6 +42,7 @@ export default class User {
     this.name = user.name;
     this.login = user.login;
     this.password = user.password;
+    this.tasks = [];
   }
 
   static toResponse(user: User): Partial<User> {

@@ -44,7 +44,7 @@ export const deleteById = (id: string): Partial<User> => {
     if (user.id === id) {
       removedUser = user;
       DB.tasks = DB.tasks.map((tas) => {
-        if (tas.userId === id) {
+        if (tas.user.id === id) {
           return { ...tas, userId: null };
         }
         return tas;
