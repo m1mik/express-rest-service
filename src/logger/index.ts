@@ -95,15 +95,15 @@ export const winstonInstance: Winston = winLog.createLogger({
   level: 'info',
   format: winLog.format.simple(),
   transports: [
-    new winLog.transports.File({
-      filename: './logs/errors.log',
-      level: 'error',
-    }),
-    new winLog.transports.File({
-      filename: './logs/exceptions.log',
-      level: 'emerg',
-    }),
-    new winLog.transports.File({ filename: './logs/main.log', level: 'info' }),
+    // new winLog.transports.File({
+    //   filename: './logs/errors.log',
+    //   level: 'error',
+    // }),
+    // new winLog.transports.File({
+    //   filename: './logs/exceptions.log',
+    //   level: 'emerg',
+    // }),
+    // new winLog.transports.File({ filename: './logs/main.log', level: 'info' }),
     // new winLog.transports.Console(),
   ],
 });
