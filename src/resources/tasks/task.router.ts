@@ -9,7 +9,6 @@ import {
   updateTask,
 } from './task.service';
 import loggerActor from '../../logger';
-import Task from './task.model';
 import { CustomError } from '../../types';
 
 const router = express.Router({ mergeParams: true });
@@ -52,7 +51,7 @@ router.delete('/:id', loggerActor, async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
-    const result: Task = deleteById(id as string);
+    const result: any = deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
     next(e);
@@ -64,7 +63,7 @@ router.put('/:id', loggerActor, async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
-    const result: Task = updateTask({
+    const result: any = updateTask({
       ...req.body,
       id,
     });

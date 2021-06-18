@@ -5,13 +5,13 @@ import {
   Column as OrmColumn,
 } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
-import { setCorrectOrder } from '../../helpers';
+import { setCorrectOrder } from '../../src/helpers';
 // eslint-disable-next-line import/no-cycle
-import Board from '../boards/board.model';
+import Board from './Board';
 // eslint-disable-next-line import/no-cycle
-import Column from '../columns/column.model';
+import Column from './Column';
 // eslint-disable-next-line import/no-cycle
-import User from '../users/user.model';
+import User from './User';
 
 @Entity()
 export default class Task {
@@ -27,12 +27,6 @@ export default class Task {
   @OrmColumn()
   public description: string;
 
-  // public userId?: string | null;
-
-  // public boardId?: string | null;
-
-  // public columnId?: string | null;
-
   @ManyToOne(() => Board, (board) => board.tasks)
   public board: Board;
 
@@ -46,18 +40,12 @@ export default class Task {
     title: string;
     order: number;
     description: string;
-    // userId?: string;
-    // boardId?: string;
-    // columnId?: string;
     column: Column;
   }) {
     this.id = uuidv4();
     this.title = task.title;
     this.order = setCorrectOrder(task.order, 'TASK');
     this.description = task.description || '';
-    // this.userId = task.userId || null;
-    // this.boardId = task.boardId || null;
-    // this.columnId = task.columnId || null;
     this.board = {} as Board;
     this.column = {} as Column;
     this.user = {} as User;

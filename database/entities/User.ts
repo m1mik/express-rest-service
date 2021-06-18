@@ -6,7 +6,7 @@ import {
 } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 // eslint-disable-next-line import/no-cycle
-import Task from '../tasks/task.model';
+import Task from './Task';
 
 export interface UserProps {
   name: string;
@@ -31,12 +31,6 @@ export default class User {
   @OneToMany(() => Task, (task) => task.user)
   public tasks: Task[];
 
-  // {
-  //   id = uuidv4(),
-  //   name = 'USER',
-  //   login = 'user',
-  //   password = 'P@55w0rd',
-  // } = {}
   constructor(user: { name: string; login: string; password: string }) {
     this.id = uuidv4();
     this.name = user.name;

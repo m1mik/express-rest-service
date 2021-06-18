@@ -1,0 +1,1244 @@
+info: 2021-06-18T06:49:45.328Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.561Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.574Z
+info: url: /users/f931429d-a9ea-4421-b9dd-4235a80eb9fd.
+
+info: method: GET.
+info: params: id: f931429d-a9ea-4421-b9dd-4235a80eb9fd.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.579Z
+info: url: /users/f931429d-a9ea-4421-b9dd-4235a80eb9fd.
+
+info: method: DELETE.
+info: params: id: f931429d-a9ea-4421-b9dd-4235a80eb9fd.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.585Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.595Z
+info: url: /users/9cfbab10-c6eb-4e6a-b302-47b704aa11a4.
+
+info: method: DELETE.
+info: params: id: 9cfbab10-c6eb-4e6a-b302-47b704aa11a4.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.599Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.605Z
+info: url: /users/bd2a327f-2b1f-4822-9ba4-689cdec36958.
+
+info: method: PUT.
+info: params: id: bd2a327f-2b1f-4822-9ba4-689cdec36958.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"bd2a327f-2b1f-4822-9ba4-689cdec36958"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.610Z
+info: url: /users/bd2a327f-2b1f-4822-9ba4-689cdec36958.
+
+info: method: GET.
+info: params: id: bd2a327f-2b1f-4822-9ba4-689cdec36958.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.614Z
+info: url: /users/bd2a327f-2b1f-4822-9ba4-689cdec36958.
+
+info: method: DELETE.
+info: params: id: bd2a327f-2b1f-4822-9ba4-689cdec36958.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.618Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.623Z
+info: url: /users/c13da280-e7ad-4e5c-a80b-de67b0cba643.
+
+info: method: DELETE.
+info: params: id: c13da280-e7ad-4e5c-a80b-de67b0cba643.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.628Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.635Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:45.644Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"d65626da-c3d9-4fe5-8f3d-c2b965b50239"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.648Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"d65626da-c3d9-4fe5-8f3d-c2b965b50239"}.
+info: -------------------------
+info: 2021-06-18T06:49:45.652Z
+info: url: /users/d65626da-c3d9-4fe5-8f3d-c2b965b50239.
+
+info: method: DELETE.
+info: params: id: d65626da-c3d9-4fe5-8f3d-c2b965b50239.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:45.657Z
+info: url: /boards/undefined/tasks/4c621a7c-8466-49e7-ba1a-91645400ed23.
+
+info: method: GET.
+info: params: boardId: undefinedid: 4c621a7c-8466-49e7-ba1a-91645400ed23.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.102Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:46.110Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:49:46.118Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:49:46.127Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:46.133Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:46.141Z
+info: url: /boards/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated board"}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:49:46.146Z
+info: url: /boards/undefined.
+
+info: method: GET.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:49:46.156Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:46.162Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:49:46.182Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:46.192Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.195Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.199Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #3","order":3,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.201Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #4","order":4,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.205Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #5","order":5,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.213Z
+info: url: /boards/undefined/tasks/4fb6bf6e-3b8e-4090-869a-fc62fd3e06de.
+
+info: method: GET.
+info: params: boardId: undefinedid: 4fb6bf6e-3b8e-4090-869a-fc62fd3e06de.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.216Z
+info: url: /boards/undefined/tasks/acac50b3-c939-4e61-a528-eba647af20bd.
+
+info: method: GET.
+info: params: boardId: undefinedid: acac50b3-c939-4e61-a528-eba647af20bd.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.218Z
+info: url: /boards/undefined/tasks/ba435107-2e73-4fe8-bf83-07e576a75aca.
+
+info: method: GET.
+info: params: boardId: undefinedid: ba435107-2e73-4fe8-bf83-07e576a75aca.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.220Z
+info: url: /boards/undefined/tasks/1ab4375b-93e5-4bcc-8f22-015cd7c821ee.
+
+info: method: GET.
+info: params: boardId: undefinedid: 1ab4375b-93e5-4bcc-8f22-015cd7c821ee.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.225Z
+info: url: /boards/undefined/tasks/3bcb9568-b5e3-4e14-a118-b9290aa82451.
+
+info: method: GET.
+info: params: boardId: undefinedid: 3bcb9568-b5e3-4e14-a118-b9290aa82451.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.229Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:49:46.235Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:49:46.523Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:49:46.530Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.536Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.551Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.556Z
+info: url: /boards/undefined/tasks/4c621a7c-8466-49e7-ba1a-91645400ed23.
+
+info: method: GET.
+info: params: boardId: undefinedid: 4c621a7c-8466-49e7-ba1a-91645400ed23.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.564Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.572Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:49:46.577Z
+info: url: /boards/undefined/tasks/a3f0627c-6201-4b94-a5a2-dcc762636de1.
+
+info: method: PUT.
+info: params: boardId: undefinedid: a3f0627c-6201-4b94-a5a2-dcc762636de1.
+info: Request has no query params.
+info: {"id":"a3f0627c-6201-4b94-a5a2-dcc762636de1","title":"Autotest updated task","order":0,"description":"Lorem ipsum","board":{},"column":{},"user":{}}.
+info: -------------------------
+info: 2021-06-18T06:49:46.582Z
+info: url: /boards/undefined/tasks/a3f0627c-6201-4b94-a5a2-dcc762636de1.
+
+info: method: GET.
+info: params: boardId: undefinedid: a3f0627c-6201-4b94-a5a2-dcc762636de1.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.586Z
+info: url: /boards/undefined/tasks/9c848a49-3abb-4146-89c7-0eed99c63f13.
+
+info: method: GET.
+info: params: boardId: undefinedid: 9c848a49-3abb-4146-89c7-0eed99c63f13.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.590Z
+info: url: /boards/undefined/tasks/9c848a49-3abb-4146-89c7-0eed99c63f13.
+
+info: method: DELETE.
+info: params: boardId: undefinedid: 9c848a49-3abb-4146-89c7-0eed99c63f13.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:49:46.594Z
+info: url: /boards/undefined/tasks/9c848a49-3abb-4146-89c7-0eed99c63f13.
+
+info: method: GET.
+info: params: boardId: undefinedid: 9c848a49-3abb-4146-89c7-0eed99c63f13.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: There is no task with such (9c848a49-3abb-4146-89c7-0eed99c63f13) id.
+info: 2021-06-18T06:49:46.599Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:51:58.746Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.783Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:51:58.799Z
+info: url: /users/38859750-9ae7-4697-ba72-68a0a93410c7.
+
+info: method: GET.
+info: params: id: 38859750-9ae7-4697-ba72-68a0a93410c7.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.803Z
+info: url: /users/38859750-9ae7-4697-ba72-68a0a93410c7.
+
+info: method: DELETE.
+info: params: id: 38859750-9ae7-4697-ba72-68a0a93410c7.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.810Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:51:58.818Z
+info: url: /users/3446e462-1ebe-49d2-8af2-fe22364145cb.
+
+info: method: DELETE.
+info: params: id: 3446e462-1ebe-49d2-8af2-fe22364145cb.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.823Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:51:58.829Z
+info: url: /users/cda2a820-cf68-456b-8c87-7383d658ce0c.
+
+info: method: PUT.
+info: params: id: cda2a820-cf68-456b-8c87-7383d658ce0c.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"cda2a820-cf68-456b-8c87-7383d658ce0c"}.
+info: -------------------------
+info: 2021-06-18T06:51:58.833Z
+info: url: /users/cda2a820-cf68-456b-8c87-7383d658ce0c.
+
+info: method: GET.
+info: params: id: cda2a820-cf68-456b-8c87-7383d658ce0c.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.837Z
+info: url: /users/cda2a820-cf68-456b-8c87-7383d658ce0c.
+
+info: method: DELETE.
+info: params: id: cda2a820-cf68-456b-8c87-7383d658ce0c.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.842Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:51:58.847Z
+info: url: /users/351acfa8-4095-4fa0-8bc9-2749372d9171.
+
+info: method: DELETE.
+info: params: id: 351acfa8-4095-4fa0-8bc9-2749372d9171.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:51:58.851Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:51:58.858Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:04.055Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:09.063Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:52:14.076Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:52:19.082Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:24.086Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:29.098Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:34.115Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:39.122Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:52:39.549Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:52:44.555Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:52:44.568Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:52:44.576Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:52:44.589Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:52:44.596Z
+info: url: /boards/undefined/tasks/0a1eaad6-dfa9-4822-97c2-fd9bbc73420e.
+
+info: method: PUT.
+info: params: boardId: undefinedid: 0a1eaad6-dfa9-4822-97c2-fd9bbc73420e.
+info: Request has no query params.
+info: {"id":"0a1eaad6-dfa9-4822-97c2-fd9bbc73420e","title":"Autotest updated task","order":0,"description":"Lorem ipsum","board":{},"column":{},"user":{}}.
+info: -------------------------
+info: 2021-06-18T06:52:44.601Z
+info: url: /boards/undefined/tasks/0a1eaad6-dfa9-4822-97c2-fd9bbc73420e.
+
+info: method: GET.
+info: params: boardId: undefinedid: 0a1eaad6-dfa9-4822-97c2-fd9bbc73420e.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:52:44.609Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: There is no task with such (undefined) id.
+info: 2021-06-18T06:52:44.646Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:55:21.491Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:55:26.486Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:55:31.495Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T06:55:36.508Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:55:41.520Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:55:46.528Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:55:51.534Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:55:56.535Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T06:55:56.935Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:56.945Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:55:56.952Z
+info: url: /users/dabaf4b4-f154-428d-93b2-a07699589753.
+
+info: method: GET.
+info: params: id: dabaf4b4-f154-428d-93b2-a07699589753.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:56.958Z
+info: url: /users/dabaf4b4-f154-428d-93b2-a07699589753.
+
+info: method: DELETE.
+info: params: id: dabaf4b4-f154-428d-93b2-a07699589753.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:56.964Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:55:56.972Z
+info: url: /users/acf34ce5-7f29-4f52-94b1-1d99afc31c43.
+
+info: method: DELETE.
+info: params: id: acf34ce5-7f29-4f52-94b1-1d99afc31c43.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:56.977Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:55:56.985Z
+info: url: /users/dec22d70-d50f-4f53-a391-bd2cfece71c7.
+
+info: method: PUT.
+info: params: id: dec22d70-d50f-4f53-a391-bd2cfece71c7.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"dec22d70-d50f-4f53-a391-bd2cfece71c7"}.
+info: -------------------------
+info: 2021-06-18T06:55:56.991Z
+info: url: /users/dec22d70-d50f-4f53-a391-bd2cfece71c7.
+
+info: method: GET.
+info: params: id: dec22d70-d50f-4f53-a391-bd2cfece71c7.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:56.995Z
+info: url: /users/dec22d70-d50f-4f53-a391-bd2cfece71c7.
+
+info: method: DELETE.
+info: params: id: dec22d70-d50f-4f53-a391-bd2cfece71c7.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:57.000Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:55:57.004Z
+info: url: /users/5ccf8ce7-8742-4f51-a41c-ff37a7bc9905.
+
+info: method: DELETE.
+info: params: id: 5ccf8ce7-8742-4f51-a41c-ff37a7bc9905.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:55:57.010Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T06:55:57.015Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:56:02.224Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T06:56:07.220Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:56:07.230Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:56:07.237Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:56:07.249Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-18T06:56:07.256Z
+info: url: /boards/undefined/tasks/d0c5cb61-b03c-484e-bdcc-b0c909f29511.
+
+info: method: PUT.
+info: params: boardId: undefinedid: d0c5cb61-b03c-484e-bdcc-b0c909f29511.
+info: Request has no query params.
+info: {"id":"d0c5cb61-b03c-484e-bdcc-b0c909f29511","title":"Autotest updated task","order":0,"description":"Lorem ipsum","board":{},"column":{},"user":{}}.
+info: -------------------------
+info: 2021-06-18T06:56:07.262Z
+info: url: /boards/undefined/tasks/d0c5cb61-b03c-484e-bdcc-b0c909f29511.
+
+info: method: GET.
+info: params: boardId: undefinedid: d0c5cb61-b03c-484e-bdcc-b0c909f29511.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T06:56:07.270Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: There is no task with such (undefined) id.
+info: 2021-06-18T06:56:07.301Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T07:44:46.748Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T07:44:51.737Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T07:44:56.742Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T07:45:01.751Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T07:45:06.752Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T07:45:11.767Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T07:45:16.774Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T07:45:21.779Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T07:45:22.199Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.211Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T07:45:22.219Z
+info: url: /users/61f896f0-013f-4837-98f8-ff67ec19841d.
+
+info: method: GET.
+info: params: id: 61f896f0-013f-4837-98f8-ff67ec19841d.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.224Z
+info: url: /users/61f896f0-013f-4837-98f8-ff67ec19841d.
+
+info: method: DELETE.
+info: params: id: 61f896f0-013f-4837-98f8-ff67ec19841d.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.229Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T07:45:22.238Z
+info: url: /users/e1f06503-c626-4d94-9047-064b2cc20428.
+
+info: method: DELETE.
+info: params: id: e1f06503-c626-4d94-9047-064b2cc20428.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.243Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T07:45:22.247Z
+info: url: /users/cc89e307-2a42-445c-bb1a-b24693a8be51.
+
+info: method: PUT.
+info: params: id: cc89e307-2a42-445c-bb1a-b24693a8be51.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"cc89e307-2a42-445c-bb1a-b24693a8be51"}.
+info: -------------------------
+info: 2021-06-18T07:45:22.252Z
+info: url: /users/cc89e307-2a42-445c-bb1a-b24693a8be51.
+
+info: method: GET.
+info: params: id: cc89e307-2a42-445c-bb1a-b24693a8be51.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.260Z
+info: url: /users/cc89e307-2a42-445c-bb1a-b24693a8be51.
+
+info: method: DELETE.
+info: params: id: cc89e307-2a42-445c-bb1a-b24693a8be51.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.266Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T07:45:22.270Z
+info: url: /users/8e46bde3-8671-4a72-91b6-9e1bf016bd19.
+
+info: method: DELETE.
+info: params: id: 8e46bde3-8671-4a72-91b6-9e1bf016bd19.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-18T07:45:22.276Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-18T07:45:22.281Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:06.987Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:11.981Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T08:03:16.997Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T08:03:22.013Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:27.014Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:32.021Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:37.023Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:42.035Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+info: 2021-06-18T08:03:42.458Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"User\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+info: 2021-06-18T08:03:47.467Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}
+info: 2021-06-18T08:03:52.475Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+error: promise rejection reason: {}, promise: {}

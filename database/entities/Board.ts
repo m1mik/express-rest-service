@@ -6,9 +6,9 @@ import {
   OneToMany,
 } from 'typeorm';
 // eslint-disable-next-line import/no-cycle
-import Column from '../columns/column.model';
+import Column from './Column';
 // eslint-disable-next-line import/no-cycle
-import Task from '../tasks/task.model';
+import Task from './Task';
 
 @Entity()
 export default class Board {

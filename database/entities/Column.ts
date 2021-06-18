@@ -6,10 +6,11 @@ import {
   ManyToOne,
   OneToMany,
 } from 'typeorm';
-import { setCorrectOrder } from '../../helpers';
+import { setCorrectOrder } from '../../src/helpers';
 // eslint-disable-next-line import/no-cycle
-import Board from '../boards/board.model';
-import Task from '../tasks/task.model';
+import Board from './Board';
+// eslint-disable-next-line import/no-cycle
+import Task from './Task';
 
 @Entity()
 export default class Column {

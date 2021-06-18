@@ -1,7 +1,6 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
 import { validate } from '../../helpers';
-import Board from './board.model';
 import loggerActor from '../../logger';
 import { CustomError } from '../../types';
 
@@ -16,7 +15,8 @@ import {
 const router = express.Router({ mergeParams: true });
 
 router.get('/', loggerActor, async (_req: Request, res) => {
-  const boards = getAll();
+  console.log('in get all router');
+  const boards = await getAll();
   res.json(boards);
 });
 
@@ -31,7 +31,7 @@ router.get('/test', (_req, _res, next) => {
 router.get('/:id', loggerActor, async (req, res, next) => {
   const { id } = req.params;
   try {
-    const board = getById(id || '');
+    const board = await getById(id || '');
     if (board) return res.status(200).json(board);
     throw new CustomError(404, `There is no board with such (${id}) id.`);
   } catch (e) {
@@ -53,7 +53,7 @@ router.post(
   body('columns.*.order').exists().isNumeric(),
   validate,
   async (req, res) => {
-    res.status(201).json(createBoard(req.body));
+    res.status(201).json(await createBoard(req.body));
   }
 );
 
@@ -61,7 +61,7 @@ router.delete('/:id', loggerActor, async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
-    const result: Board = deleteById(id as string);
+    const result: any = await deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
     next(e);
@@ -79,7 +79,7 @@ router
     body('columns.*.id').optional().isUUID(),
     async (req, res, next) => {
       try {
-        const result = updateBoard({
+        const result = await updateBoard({
           ...req.body,
           id: req.params.id,
         });

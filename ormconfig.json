@@ -1,24 +1,24 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "port": 5432,
+  "port": 5433,
   "username": "postgres",
-  "password": "postgres",
-  "database": "stripe-example",
+  "password": "take5five",
+  "database": "postgres",
   "synchronize": true,
   "logging": false,
   "entities": [
-    "database/entities/*.ts"
+    "src/database/entities/*.ts"
   ],
   "migrations": [
-    "database/migrations/*.ts"
+    "src/database/migrations/*.ts"
   ],
   "subscribers": [
-    "database/subscribers/*.ts"
+    "src/database/subscribers/*.ts"
   ],
   "cli": {
-    "entitiesDir": "database/entities",
-    "migrationsDir": "database/migrations",
-    "subscribersDir": "database/subscribers"
+    "entitiesDir": "src/database/entities",
+    "migrationsDir": "src/database/migrations",
+    "subscribersDir": "src/database/subscribers"
   }
 }
