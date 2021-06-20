@@ -5,7 +5,7 @@ import {
   Column as OrmColumn,
 } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
-import { setCorrectOrder } from '../../src/helpers';
+import { setCorrectOrder } from '../../helpers';
 // eslint-disable-next-line import/no-cycle
 import Board from './Board';
 // eslint-disable-next-line import/no-cycle

@@ -6,7 +6,7 @@ import {
   ManyToOne,
   OneToMany,
 } from 'typeorm';
-import { setCorrectOrder } from '../../src/helpers';
+import { setCorrectOrder } from '../../helpers';
 // eslint-disable-next-line import/no-cycle
 import Board from './Board';
 // eslint-disable-next-line import/no-cycle
@@ -39,6 +39,6 @@ export default class Column {
     this.title = column.title;
     this.order = setCorrectOrder(column.order, 'COLUMN');
     this.tasks = column.tasks;
-    this.board = column.board || {};
+    this.board = column.board || ({} as Board);
   }
 }

@@ -5,7 +5,7 @@ import {
   DeleteResult,
   UpdateResult,
 } from 'typeorm';
-import User from '../../../database/entities/User';
+import User from '../../database/entities/User';
 
 export const getAll = async (): Promise<User[]> => {
   const result = await getRepository(User).createQueryBuilder('user').getMany();

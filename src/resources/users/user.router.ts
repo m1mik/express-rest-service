@@ -1,6 +1,6 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
-import User from '../../../database/entities/User';
+import User from '../../database/entities/User';
 import { validate } from '../../helpers';
 import {
   getAll,

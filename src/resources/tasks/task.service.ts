@@ -5,8 +5,8 @@ import {
   DeleteResult,
   UpdateResult,
 } from 'typeorm';
-import Task from '../../../database/entities/Task';
-import Column from '../../../database/entities/Column';
+import Task from '../../database/entities/Task';
+import Column from '../../database/entities/Column';
 
 /**
  * returns all Tasks

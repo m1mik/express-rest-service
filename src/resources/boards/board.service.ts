@@ -5,7 +5,7 @@ import {
   DeleteResult,
   UpdateResult,
 } from 'typeorm';
-import Board from '../../../database/entities/Board';
+import Board from '../../database/entities/Board';
 
 export const getAll = async (): Promise<Board[]> => {
   const result = await getRepository(Board)
