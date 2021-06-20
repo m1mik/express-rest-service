@@ -20,7 +20,14 @@ npm install
 ## Running application
 
 ```
-npm start
+npm run build
+npm run start
+```
+
+## Running via docker
+
+```
+docker-compose up
 ```
 
 After starting the app on port (4000 as default) you can open
@@ -70,3 +77,10 @@ npm run lint
 Press <kbd>F5</kbd> to debug.
 
 For more information, visit: https://code.visualstudio.com/docs/editor/debugging
+
+##### docker shortcuts
+
+`docker build -t server-image .` build web-app image
+`docker exec -ti <app-name (e.g. "server")> sh | bash` open bash (container cli)
+`ctrl+c ctrl+d` close bash
+`docker rm|stop|kill $(docker ps -a -q)`
