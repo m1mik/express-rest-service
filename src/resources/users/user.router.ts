@@ -1,6 +1,8 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
+import { getRepository } from 'typeorm';
 import User from '../../database/entities/User';
+import Task from '../../database/entities/Task';
 import { validate } from '../../helpers';
 import {
   getAll,
@@ -9,16 +11,15 @@ import {
   deleteById,
   updateUser,
 } from './user.service';
-import loggerActor from '../../logger';
 import { CustomError } from '../../types';
 
 const router = express.Router({ mergeParams: true });
-router.get('/', loggerActor, async (_req: Request, res) => {
+router.get('/', async (_req: Request, res) => {
   const users = await getAll();
   res.json(users.map(User.toResponse));
 });
 
-router.get('/:id', loggerActor, async (req, res, next) => {
+router.get('/:id', async (req, res, next) => {
   const { id } = req.params;
   try {
     const user = await getById(id as string);
@@ -32,15 +33,20 @@ router.get('/:id', loggerActor, async (req, res, next) => {
 
 router.post(
   '/',
-  loggerActor,
+
   body(['name', 'login', 'password']).exists(),
   validate,
   async (req, res) => {
-    res.status(201).json(await createUser(req.body));
+    const result = await createUser(req.body);
+    const tasks = await getRepository(Task)
+      .createQueryBuilder('task')
+      .getMany();
+    console.log('TASKs on delete: ', tasks);
+    res.status(201).json(User.toResponse(result));
   }
 );
 
-router.delete('/:id', loggerActor, async (req, res, next) => {
+router.delete('/:id', async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
@@ -52,7 +58,7 @@ router.delete('/:id', loggerActor, async (req, res, next) => {
   return {};
 });
 
-router.put('/:id', loggerActor, async (req, res, next) => {
+router.put('/:id', async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {

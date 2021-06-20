@@ -8,16 +8,15 @@ import {
   deleteById,
   updateTask,
 } from './task.service';
-import loggerActor from '../../logger';
 import { CustomError } from '../../types';
 
 const router = express.Router({ mergeParams: true });
-router.get('/', loggerActor, async (_req: Request, res) => {
+router.get('/', async (_req: Request, res) => {
   const users = getAll();
   res.json(users);
 });
 
-router.get('/:id', loggerActor, async (req, res, next) => {
+router.get('/:id', async (req, res, next) => {
   const { id } = req.params;
   try {
     const task = getById(id as string);
@@ -31,7 +30,7 @@ router.get('/:id', loggerActor, async (req, res, next) => {
 
 router.post(
   '/',
-  loggerActor,
+
   body('title').exists(),
   body('order').isNumeric(),
   validate,
@@ -47,7 +46,7 @@ router.post(
   }
 );
 
-router.delete('/:id', loggerActor, async (req, res, next) => {
+router.delete('/:id', async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
@@ -59,8 +58,11 @@ router.delete('/:id', loggerActor, async (req, res, next) => {
   return {};
 });
 
-router.put('/:id', loggerActor, async (req, res, next) => {
+router.put('/:id', async (req, res, next) => {
   const { params } = req;
+  console.log('on update task; query', req.query);
+  console.log('params: ', req.params);
+  console.log('body: ', req.body);
   const { id } = params;
   try {
     const result: any = updateTask({

@@ -1,7 +1,6 @@
 import {
   getRepository,
   getConnection,
-  InsertResult,
   DeleteResult,
   UpdateResult,
 } from 'typeorm';
@@ -11,40 +10,31 @@ export const getAll = async (): Promise<Board[]> => {
   const result = await getRepository(Board)
     .createQueryBuilder('board')
     .getMany();
-  console.log('ALL boards: ', result);
   return result;
 };
 
-export const getById = async (id: string): Promise<Board | undefined> =>
-  getRepository(Board)
-    .createQueryBuilder('board')
-    .where('user.id = : id', { id })
-    .getOne();
+export const getById = async (id: string): Promise<Board | undefined> => {
+  const { manager } = getConnection();
+  const board = await manager.preload(Board, { id });
+  return board;
+};
 
-export const createBoard = async (data: {
-  title: string;
-}): Promise<InsertResult> =>
-  getConnection()
-    .createQueryBuilder()
-    .insert()
-    .into(Board)
-    .values(new Board({ title: data.title }))
-    .execute();
+export const createBoard = async (data: { title: string }): Promise<void> => {
+  const { manager } = getConnection();
+  const board = manager.create(Board, data);
+  await manager.save(board);
+};
 
-export const deleteById = async (id: string): Promise<DeleteResult> =>
-  getRepository(Board)
-    .createQueryBuilder()
-    .delete()
-    .from(Board)
-    .where('id = :id', { id })
-    .execute();
+export const deleteById = async (id: string): Promise<DeleteResult> => {
+  const { manager } = getConnection();
+  const board = await manager.delete(Board, id);
+  return board.raw;
+};
 
 export const updateBoard = async (
   dataForUpdate: Partial<Board>
-): Promise<UpdateResult> =>
-  getRepository(Board)
-    .createQueryBuilder()
-    .update(Board)
-    .set(dataForUpdate)
-    .where('id = :id', { id: dataForUpdate.id })
-    .execute();
+): Promise<UpdateResult> => {
+  const { manager } = getConnection();
+  const board = await manager.update(Board, dataForUpdate.id, dataForUpdate);
+  return board.raw;
+};

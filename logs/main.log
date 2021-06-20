@@ -1242,3 +1242,2126 @@ info: Request has no query params.
 info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
 info: -------------------------
 error: promise rejection reason: {}, promise: {}
+info: 2021-06-20T15:41:23.858Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:24.373Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.489Z
+info: url: /users/2631483e-1bff-40ba-bbba-2b2d2c8989da.
+
+info: method: GET.
+info: params: id: 2631483e-1bff-40ba-bbba-2b2d2c8989da.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:24.519Z
+info: url: /users/2631483e-1bff-40ba-bbba-2b2d2c8989da.
+
+info: method: DELETE.
+info: params: id: 2631483e-1bff-40ba-bbba-2b2d2c8989da.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:24.553Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.602Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.634Z
+info: url: /users/85c474cb-3b15-410f-b772-c1ac4eac877b.
+
+info: method: PUT.
+info: params: id: 85c474cb-3b15-410f-b772-c1ac4eac877b.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"85c474cb-3b15-410f-b772-c1ac4eac877b"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.665Z
+info: url: /users/85c474cb-3b15-410f-b772-c1ac4eac877b.
+
+info: method: GET.
+info: params: id: 85c474cb-3b15-410f-b772-c1ac4eac877b.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:24.692Z
+info: url: /users/85c474cb-3b15-410f-b772-c1ac4eac877b.
+
+info: method: DELETE.
+info: params: id: 85c474cb-3b15-410f-b772-c1ac4eac877b.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:24.715Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.746Z
+info: url: /users/5dba1bb9-2811-4717-b7db-d1db1844de92.
+
+info: method: DELETE.
+info: params: id: 5dba1bb9-2811-4717-b7db-d1db1844de92.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:24.785Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.818Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:24.859Z
+info: url: /boards/0cf4ac80-082a-4077-abc3-b5753aa44bff/tasks/.
+
+info: method: POST.
+info: params: boardId: 0cf4ac80-082a-4077-abc3-b5753aa44bff.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"8a30541a-83ae-4408-9e5d-4d134eb9ff96","boardId":"0cf4ac80-082a-4077-abc3-b5753aa44bff"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.873Z
+info: url: /boards/0cf4ac80-082a-4077-abc3-b5753aa44bff/tasks/.
+
+info: method: POST.
+info: params: boardId: 0cf4ac80-082a-4077-abc3-b5753aa44bff.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"8a30541a-83ae-4408-9e5d-4d134eb9ff96","boardId":"0cf4ac80-082a-4077-abc3-b5753aa44bff"}.
+info: -------------------------
+info: 2021-06-20T15:41:24.895Z
+info: url: /users/8a30541a-83ae-4408-9e5d-4d134eb9ff96.
+
+info: method: DELETE.
+info: params: id: 8a30541a-83ae-4408-9e5d-4d134eb9ff96.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:25.481Z
+info: url: /boards/0cf4ac80-082a-4077-abc3-b5753aa44bff/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 0cf4ac80-082a-4077-abc3-b5753aa44bffid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:25.918Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:25.955Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:25.998Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.022Z
+info: url: /boards/fe5f1a35-8292-44a2-acf5-720f2b096750.
+
+info: method: GET.
+info: params: id: fe5f1a35-8292-44a2-acf5-720f2b096750.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.040Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:26.065Z
+info: url: /boards/3df64635-80ed-4b27-b5ab-bdc3d097523f.
+
+info: method: DELETE.
+info: params: id: 3df64635-80ed-4b27-b5ab-bdc3d097523f.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.087Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:26.111Z
+info: url: /boards/4d93e8c2-7470-4800-adff-e8962328b1d2.
+
+info: method: PUT.
+info: params: id: 4d93e8c2-7470-4800-adff-e8962328b1d2.
+info: Request has no query params.
+info: {"title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"id":"4d93e8c2-7470-4800-adff-e8962328b1d2"}.
+info: -------------------------
+error: No entity column "columns" was found.
+info: 2021-06-20T15:41:26.202Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:26.221Z
+info: url: /boards/6f208414-6d72-4b24-b30a-53de4aaafef7.
+
+info: method: DELETE.
+info: params: id: 6f208414-6d72-4b24-b30a-53de4aaafef7.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.237Z
+info: url: /boards/6f208414-6d72-4b24-b30a-53de4aaafef7.
+
+info: method: GET.
+info: params: id: 6f208414-6d72-4b24-b30a-53de4aaafef7.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: There is no board with such (6f208414-6d72-4b24-b30a-53de4aaafef7) id.
+info: 2021-06-20T15:41:26.261Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:26.306Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/.
+
+info: method: POST.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81.
+info: Request has no query params.
+info: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"9a2900a3-7c0a-427d-9880-dc7a8f3d6d81","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.319Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/.
+
+info: method: POST.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"9a2900a3-7c0a-427d-9880-dc7a8f3d6d81","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.335Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/.
+
+info: method: POST.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"9a2900a3-7c0a-427d-9880-dc7a8f3d6d81","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.346Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/.
+
+info: method: POST.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81.
+info: Request has no query params.
+info: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"9a2900a3-7c0a-427d-9880-dc7a8f3d6d81","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.357Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/.
+
+info: method: POST.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81.
+info: Request has no query params.
+info: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"9a2900a3-7c0a-427d-9880-dc7a8f3d6d81","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.385Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.395Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.407Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.418Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.429Z
+info: url: /boards/9a2900a3-7c0a-427d-9880-dc7a8f3d6d81/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 9a2900a3-7c0a-427d-9880-dc7a8f3d6d81id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.443Z
+info: url: /boards/fe5f1a35-8292-44a2-acf5-720f2b096750.
+
+info: method: DELETE.
+info: params: id: fe5f1a35-8292-44a2-acf5-720f2b096750.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.855Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:41:26.877Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/.
+
+info: method: POST.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9ab.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.894Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/.
+
+info: method: GET.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9ab.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.933Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/.
+
+info: method: GET.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9ab.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:26.961Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/.
+
+info: method: POST.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9ab.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.977Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/.
+
+info: method: POST.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9ab.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:41:26.991Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: PUT.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated task"}.
+info: -------------------------
+info: 2021-06-20T15:41:27.004Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+info: 2021-06-20T15:41:27.042Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9abid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:27.053Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/undefined.
+
+info: method: DELETE.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9abid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+info: 2021-06-20T15:41:27.067Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: f7bb4547-1588-418d-948b-b36bb086b9abid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:41:27.164Z
+info: url: /boards/f7bb4547-1588-418d-948b-b36bb086b9ab.
+
+info: method: DELETE.
+info: params: id: f7bb4547-1588-418d-948b-b36bb086b9ab.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:13.734Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:14.082Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.177Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.201Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.228Z
+info: url: /users/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:14.370Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.394Z
+info: url: /users/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:14.430Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.465Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:14.499Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.513Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum"}.
+info: -------------------------
+info: 2021-06-20T15:45:14.529Z
+info: url: /users/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:15.351Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:15.392Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.444Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.477Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:15.509Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:15.593Z
+info: url: /boards/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated board"}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:15.706Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:15.732Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:15.766Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:15.801Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:15.811Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:15.823Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #3","order":3,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:15.834Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #4","order":4,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:15.846Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #5","order":5,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:15.891Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.918Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.933Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.945Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.954Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:15.967Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:15.990Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:45:16.632Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:45:16.662Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:16.684Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:16.746Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:16.805Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:16.831Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:45:16.849Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: PUT.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated task"}.
+info: -------------------------
+info: 2021-06-20T15:45:16.864Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+info: 2021-06-20T15:45:16.902Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:16.917Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: DELETE.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+info: 2021-06-20T15:45:16.936Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:45:17.033Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:46:54.576Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:54.943Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.019Z
+info: url: /users/c7fccbec-abb7-44a8-9cd2-b69c89f52341.
+
+info: method: GET.
+info: params: id: c7fccbec-abb7-44a8-9cd2-b69c89f52341.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:55.044Z
+info: url: /users/c7fccbec-abb7-44a8-9cd2-b69c89f52341.
+
+info: method: DELETE.
+info: params: id: c7fccbec-abb7-44a8-9cd2-b69c89f52341.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:55.072Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.111Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.135Z
+info: url: /users/0a79d2c4-f200-474f-9356-b221aaf4386f.
+
+info: method: PUT.
+info: params: id: 0a79d2c4-f200-474f-9356-b221aaf4386f.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"0a79d2c4-f200-474f-9356-b221aaf4386f"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.158Z
+info: url: /users/0a79d2c4-f200-474f-9356-b221aaf4386f.
+
+info: method: GET.
+info: params: id: 0a79d2c4-f200-474f-9356-b221aaf4386f.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:55.181Z
+info: url: /users/0a79d2c4-f200-474f-9356-b221aaf4386f.
+
+info: method: DELETE.
+info: params: id: 0a79d2c4-f200-474f-9356-b221aaf4386f.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:55.199Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.220Z
+info: url: /users/c913ef68-e446-4286-8b22-c6a121d9ed2a.
+
+info: method: DELETE.
+info: params: id: c913ef68-e446-4286-8b22-c6a121d9ed2a.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:55.241Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.266Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:55.304Z
+info: url: /boards/2ba9b164-2b00-46fa-aa86-b2e495003af1/tasks/.
+
+info: method: POST.
+info: params: boardId: 2ba9b164-2b00-46fa-aa86-b2e495003af1.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"26df0105-7901-46a1-9db5-75b2343e7237","boardId":"2ba9b164-2b00-46fa-aa86-b2e495003af1"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.317Z
+info: url: /boards/2ba9b164-2b00-46fa-aa86-b2e495003af1/tasks/.
+
+info: method: POST.
+info: params: boardId: 2ba9b164-2b00-46fa-aa86-b2e495003af1.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"26df0105-7901-46a1-9db5-75b2343e7237","boardId":"2ba9b164-2b00-46fa-aa86-b2e495003af1"}.
+info: -------------------------
+info: 2021-06-20T15:46:55.334Z
+info: url: /users/26df0105-7901-46a1-9db5-75b2343e7237.
+
+info: method: DELETE.
+info: params: id: 26df0105-7901-46a1-9db5-75b2343e7237.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:55.590Z
+info: url: /boards/2ba9b164-2b00-46fa-aa86-b2e495003af1/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 2ba9b164-2b00-46fa-aa86-b2e495003af1id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:56.222Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:56.265Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/.
+
+info: method: POST.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7ea.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:56.293Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/.
+
+info: method: GET.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7ea.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:56.367Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/.
+
+info: method: GET.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7ea.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:56.422Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/.
+
+info: method: POST.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7ea.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:56.439Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/.
+
+info: method: POST.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7ea.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:56.456Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: PUT.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated task"}.
+info: -------------------------
+info: 2021-06-20T15:46:56.472Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+info: 2021-06-20T15:46:56.495Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7eaid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:56.507Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/undefined.
+
+info: method: DELETE.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7eaid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:56.528Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: d9e21074-282d-484c-af3c-e233e4e9d7eaid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+info: 2021-06-20T15:46:56.639Z
+info: url: /boards/d9e21074-282d-484c-af3c-e233e4e9d7ea.
+
+info: method: DELETE.
+info: params: id: d9e21074-282d-484c-af3c-e233e4e9d7ea.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.155Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:57.180Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.235Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.287Z
+info: url: /boards/9716ddd5-c3be-411e-aa50-42397c4f1523.
+
+info: method: GET.
+info: params: id: 9716ddd5-c3be-411e-aa50-42397c4f1523.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.309Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:57.338Z
+info: url: /boards/ba4ee091-c6f8-46d8-8e58-e03139fdbd3d.
+
+info: method: DELETE.
+info: params: id: ba4ee091-c6f8-46d8-8e58-e03139fdbd3d.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.366Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:57.391Z
+info: url: /boards/2c03c2d4-549c-4fbf-b0dc-75b413e46738.
+
+info: method: PUT.
+info: params: id: 2c03c2d4-549c-4fbf-b0dc-75b413e46738.
+info: Request has no query params.
+info: {"title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"id":"2c03c2d4-549c-4fbf-b0dc-75b413e46738"}.
+info: -------------------------
+error: No entity column "columns" was found.
+info: 2021-06-20T15:46:57.537Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:57.560Z
+info: url: /boards/443ee22b-9de7-49e6-b56c-a033025a91fa.
+
+info: method: DELETE.
+info: params: id: 443ee22b-9de7-49e6-b56c-a033025a91fa.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.576Z
+info: url: /boards/443ee22b-9de7-49e6-b56c-a033025a91fa.
+
+info: method: GET.
+info: params: id: 443ee22b-9de7-49e6-b56c-a033025a91fa.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: There is no board with such (443ee22b-9de7-49e6-b56c-a033025a91fa) id.
+info: 2021-06-20T15:46:57.593Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:46:57.625Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/.
+
+info: method: POST.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"47b91c00-3370-41c0-94ff-f5c34e5ff6e8","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:57.635Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/.
+
+info: method: POST.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"47b91c00-3370-41c0-94ff-f5c34e5ff6e8","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:57.650Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/.
+
+info: method: POST.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8.
+info: Request has no query params.
+info: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"47b91c00-3370-41c0-94ff-f5c34e5ff6e8","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:57.661Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/.
+
+info: method: POST.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8.
+info: Request has no query params.
+info: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"47b91c00-3370-41c0-94ff-f5c34e5ff6e8","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:57.673Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/.
+
+info: method: POST.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8.
+info: Request has no query params.
+info: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"47b91c00-3370-41c0-94ff-f5c34e5ff6e8","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:46:57.710Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.727Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.738Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.748Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.759Z
+info: url: /boards/47b91c00-3370-41c0-94ff-f5c34e5ff6e8/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: 47b91c00-3370-41c0-94ff-f5c34e5ff6e8id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:46:57.774Z
+info: url: /boards/9716ddd5-c3be-411e-aa50-42397c4f1523.
+
+info: method: DELETE.
+info: params: id: 9716ddd5-c3be-411e-aa50-42397c4f1523.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:31.447Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:31.605Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:48:31.703Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:48:31.735Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:48:31.773Z
+info: url: /users/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:32.009Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:48:32.029Z
+info: url: /users/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:32.069Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:48:32.090Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:32.123Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum"}.
+info: -------------------------
+info: 2021-06-20T15:48:32.137Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum"}.
+info: -------------------------
+info: 2021-06-20T15:48:32.156Z
+info: url: /users/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:33.061Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:33.107Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.177Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.217Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:33.247Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:33.272Z
+info: url: /boards/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated board"}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:33.382Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:33.404Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:33.431Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:33.469Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:33.480Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:33.491Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #5","order":5,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:33.501Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #3","order":3,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:33.511Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #4","order":4,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:33.552Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.585Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.596Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.605Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.615Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:33.629Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:33.654Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:48:34.257Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:48:34.287Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:34.310Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:34.428Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:34.556Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:34.573Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:48:34.585Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: PUT.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated task"}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+info: 2021-06-20T15:48:34.608Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:34.626Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:34.637Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: DELETE.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+info: 2021-06-20T15:48:34.655Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:48:34.748Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:28.605Z
+info: url: /users/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:29.037Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.130Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.158Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.184Z
+info: url: /users/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:29.326Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.349Z
+info: url: /users/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:29.388Z
+info: url: /users/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.426Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:29.464Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.477Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum"}.
+info: -------------------------
+info: 2021-06-20T15:51:29.495Z
+info: url: /users/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:30.317Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:30.365Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.468Z
+info: url: /boards/.
+
+info: method: GET.
+info: Request has no params.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.526Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:30.559Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:30.587Z
+info: url: /boards/undefined.
+
+info: method: PUT.
+info: params: id: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated board"}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:30.709Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:30.732Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:30.764Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:30.803Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:30.816Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:30.830Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #3","order":3,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:30.840Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #4","order":4,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:30.854Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Task #5","order":5,"description":"Lorem ipsum","userId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:30.895Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.910Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.925Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.936Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.949Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:30.962Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:30.986Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+info: 2021-06-20T15:51:31.561Z
+info: url: /boards/.
+
+info: method: POST.
+info: Request has no params.
+info: Request has no query params.
+info: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}.
+info: -------------------------
+info: 2021-06-20T15:51:31.587Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:31.613Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:31.725Z
+info: url: /boards/undefined/tasks/.
+
+info: method: GET.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:31.831Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:31.851Z
+info: url: /boards/undefined/tasks/.
+
+info: method: POST.
+info: params: boardId: undefined.
+info: Request has no query params.
+info: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}.
+info: -------------------------
+info: 2021-06-20T15:51:31.864Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: PUT.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {"title":"Autotest updated task"}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+info: 2021-06-20T15:51:31.895Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:31.926Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:31.942Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: DELETE.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+info: 2021-06-20T15:51:31.958Z
+info: url: /boards/undefined/tasks/undefined.
+
+info: method: GET.
+info: params: boardId: undefinedid: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+info: 2021-06-20T15:51:32.066Z
+info: url: /boards/undefined.
+
+info: method: DELETE.
+info: params: id: undefined.
+info: Request has no query params.
+info: {}.
+info: -------------------------
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"

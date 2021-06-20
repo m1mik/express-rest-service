@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -18,16 +17,9 @@ export default class Board {
   @OrmColumn()
   public title: string;
 
-  @OneToMany(() => Column, (column) => column.board)
+  @OneToMany(() => Column, (column) => column.board, { cascade: true })
   public columns: Column[];
 
-  @OneToMany(() => Task, (task) => task.board)
+  @OneToMany(() => Task, (task) => task.board, { cascade: true })
   public tasks: Task[];
-
-  constructor(board: { title: string }) {
-    this.id = uuidv4();
-    this.title = board.title;
-    this.columns = [];
-    this.tasks = [];
-  }
 }

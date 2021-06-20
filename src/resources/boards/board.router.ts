@@ -1,7 +1,6 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
 import { validate } from '../../helpers';
-import loggerActor from '../../logger';
 import { CustomError } from '../../types';
 
 import {
@@ -14,8 +13,7 @@ import {
 
 const router = express.Router({ mergeParams: true });
 
-router.get('/', loggerActor, async (_req: Request, res) => {
-  console.log('in get all router');
+router.get('/', async (_req: Request, res) => {
   const boards = await getAll();
   res.json(boards);
 });
@@ -28,7 +26,7 @@ router.get('/test', (_req, _res, next) => {
   }
 });
 
-router.get('/:id', loggerActor, async (req, res, next) => {
+router.get('/:id', async (req, res, next) => {
   const { id } = req.params;
   try {
     const board = await getById(id || '');
@@ -45,7 +43,7 @@ router.get('/:id', loggerActor, async (req, res, next) => {
 
 router.post(
   '/',
-  loggerActor,
+
   body('id').optional().isUUID(),
   body('title').exists(),
   body('columns').optional().isArray(),
@@ -57,7 +55,7 @@ router.post(
   }
 );
 
-router.delete('/:id', loggerActor, async (req, res, next) => {
+router.delete('/:id', async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
@@ -72,7 +70,6 @@ router.delete('/:id', loggerActor, async (req, res, next) => {
 router
   .route('/:id')
   .put(
-    loggerActor,
     body('columns').optional().isArray(),
     body('columns.*.title').exists(),
     body('columns.*.order').exists().isNumeric(),

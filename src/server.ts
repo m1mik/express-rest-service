@@ -23,7 +23,7 @@ app.listen(PORT, async () => {
       console.log('typeorm connection SUCCESS!!!!');
       break;
     } catch (e) {
-      console.log('typeorm connection failed');
+      console.log('typeorm connection failed', e);
       retries -= 1;
       // eslint-disable-next-line
       await new Promise((res) => setTimeout(res, 5000));

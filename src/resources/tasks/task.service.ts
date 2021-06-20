@@ -1,56 +1,47 @@
 import {
   getRepository,
   getConnection,
-  InsertResult,
   DeleteResult,
   UpdateResult,
 } from 'typeorm';
 import Task from '../../database/entities/Task';
 import Column from '../../database/entities/Column';
+import User from '../../database/entities/User';
 
-/**
- * returns all Tasks
- * @returns {Task[]}
- */
 export const getAll = async (): Promise<Task[]> => {
   const result = await getRepository(Task).createQueryBuilder('task').getMany();
-  console.log('ALL tasks!: ', result);
   return result;
 };
 
-export const getById = async (id: string): Promise<Task | undefined> =>
-  getRepository(Task)
-    .createQueryBuilder('task')
-    .where('user.id = : id', { id })
-    .getOne();
+export const getById = async (id: string): Promise<Task | undefined> => {
+  const { manager } = getConnection();
+  const task = await manager.getId(Task, { id });
+  return task;
+};
 
 export const createTask = async (data: {
   title: string;
   order: number;
   description: string;
   column: Column;
-}): Promise<InsertResult> =>
-  getConnection()
-    .createQueryBuilder()
-    .insert()
-    .into(Task)
-    .values(new Task(data))
-    .execute();
+}): Promise<void> => {
+  const { manager } = getConnection();
+  const task = manager.create(Task, data);
+  await manager.save(task);
+};
 
-export const deleteById = async (id: string): Promise<DeleteResult> =>
-  getRepository(Task)
-    .createQueryBuilder()
-    .delete()
-    .from(Task)
-    .where('id = :id', { id })
-    .execute();
+export const deleteById = async (id: string): Promise<DeleteResult> => {
+  const { manager } = getConnection();
+  const task = await manager.delete(Task, id);
+  return task.raw;
+};
 
 export const updateTask = async (
   dataForUpdate: Partial<Task>
-): Promise<UpdateResult> =>
-  getRepository(Task)
-    .createQueryBuilder()
-    .update(Task)
-    .set(dataForUpdate)
-    .where('id = :id', { id: dataForUpdate.id })
-    .execute();
+): Promise<UpdateResult> => {
+  const result = await getRepository(User).createQueryBuilder('user').getMany();
+  console.log('in update, : ', result, dataForUpdate);
+  const { manager } = getConnection();
+  const task = await manager.update(Task, dataForUpdate.id, dataForUpdate);
+  return task.raw;
+};

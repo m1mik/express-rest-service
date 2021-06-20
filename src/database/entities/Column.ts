@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import {
   Entity,
   PrimaryGeneratedColumn,
@@ -6,7 +5,6 @@ import {
   ManyToOne,
   OneToMany,
 } from 'typeorm';
-import { setCorrectOrder } from '../../helpers';
 // eslint-disable-next-line import/no-cycle
 import Board from './Board';
 // eslint-disable-next-line import/no-cycle
@@ -23,22 +21,9 @@ export default class Column {
   @OrmColumn()
   public order: number;
 
-  @OneToMany(() => Task, (task) => task.column)
+  @OneToMany(() => Task, (task) => task.column, { cascade: true })
   public tasks: Task[];
 
-  @ManyToOne(() => Board, (board) => board.columns)
+  @ManyToOne(() => Board, (board) => board.columns, { onDelete: 'CASCADE' })
   public board: Board;
-
-  constructor(column: {
-    title: string;
-    order: number;
-    tasks: Task[];
-    board: Board;
-  }) {
-    this.id = uuidv4();
-    this.title = column.title;
-    this.order = setCorrectOrder(column.order, 'COLUMN');
-    this.tasks = column.tasks;
-    this.board = column.board || ({} as Board);
-  }
 }
