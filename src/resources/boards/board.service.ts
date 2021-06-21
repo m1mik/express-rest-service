@@ -40,12 +40,6 @@ export const updateBoard = async (
   dataForUpdate: Partial<Board>
 ): Promise<UpdateResult> => {
   const { manager } = getConnection();
-  const initBoard = await getRepository(Board).findOne({
-    where: { id: dataForUpdate.id },
-    relations: ['columns', 'tasks'],
-  });
-  console.log('init board: ', initBoard);
   const board = await manager.update(Board, dataForUpdate.id, dataForUpdate);
-  console.log('udpated board: ', board);
   return board.raw;
 };

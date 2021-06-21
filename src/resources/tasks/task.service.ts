@@ -24,7 +24,6 @@ export const createTask = async (data: {
   title: string;
   order: number;
   description: string;
-  column: Column;
   userId: string;
   boardId: string;
   columnId: string;
@@ -45,7 +44,8 @@ export const createTask = async (data: {
     },
   });
   const { manager } = getConnection();
-  const task = manager.create(Task, { ...data, user, board, column });
+  const finalTask = { ...data, user, board, column };
+  const task = manager.create(Task, finalTask);
   const result = await manager.save(task);
   return result;
 };
@@ -59,10 +59,6 @@ export const deleteById = async (id: string): Promise<DeleteResult> => {
 export const updateTask = async (
   dataForUpdate: Partial<Task>
 ): Promise<UpdateResult> => {
-  const result = await getRepository(User)
-    .createQueryBuilder('myusers')
-    .getMany();
-  console.log('in update, : ', result, dataForUpdate);
   const { manager } = getConnection();
   const task = await manager.update(Task, dataForUpdate.id, dataForUpdate);
   return task.raw;

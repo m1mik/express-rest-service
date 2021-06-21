@@ -1,5 +1,6 @@
 import { getRepository, getConnection, DeleteResult } from 'typeorm';
 import User from '../../database/entities/User';
+// import Task from '../../database/entities/Task';
 
 export const getAll = async (): Promise<Partial<User>[]> => {
   const result = (
@@ -9,12 +10,11 @@ export const getAll = async (): Promise<Partial<User>[]> => {
 };
 
 export const getById = async (id: string): Promise<User | undefined> => {
-  const result = await getRepository(User).findOne({
-    where: {
-      id,
-    },
-  });
-  console.log('is users setted: ', result[0]);
+  // const result = await getRepository(User).findOne({
+  //   where: {
+  //     id,
+  //   },
+  // });
   const { manager } = getConnection();
   const user = await manager.preload(User, { id });
   return user;
@@ -25,17 +25,20 @@ export const createUser = async (data: {
   login: string;
   password: string;
 }): Promise<User> => {
-  console.log('Create user: ', data);
   const { manager } = getConnection();
   const user = manager.create(User, data);
   const result = await manager.save(user);
-  console.log('created user: ', User.toResponse(result));
   return result;
 };
 
 export const deleteById = async (id: string): Promise<DeleteResult> => {
   const { manager } = getConnection();
   const user = await manager.delete(User, id);
+  // const prom = await new Promise((res) => {
+  //   setTimeout(() => {
+  //     res(getRepository(Task).find());
+  //   }, 2000);
+  // });
   return user.raw;
 };
 

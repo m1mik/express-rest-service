@@ -20,12 +20,12 @@ export default class Task {
   @Column()
   public description: string;
 
+  @ManyToOne(() => User, (user) => user.tasks, { onDelete: 'CASCADE' })
+  public user: User;
+
   @ManyToOne(() => Board, (board) => board.tasks, { onDelete: 'CASCADE' })
   public board: Board;
 
   @ManyToOne(() => MyColumn, (column) => column.tasks, { onDelete: 'CASCADE' })
   public column: MyColumn;
-
-  @ManyToOne(() => User, (user) => user.tasks, { onDelete: 'CASCADE' })
-  public user: User;
 }

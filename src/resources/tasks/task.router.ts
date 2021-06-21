@@ -23,7 +23,6 @@ router.get('/:id', async (req, res, next) => {
     if (task) return res.status(200).json(task);
     throw new CustomError(404, `There is no task with such (${id}) id.`);
   } catch (e) {
-    console.log('catch on task get by id');
     next(e);
   }
   return {};
@@ -31,7 +30,7 @@ router.get('/:id', async (req, res, next) => {
 
 router.post(
   '/',
-
+  body('userId').isUUID(),
   body('title').exists(),
   body('order').isNumeric(),
   validate,
@@ -46,7 +45,6 @@ router.post(
         })
       );
     } catch (e) {
-      console.log('catch on create task');
       next(e);
     }
   }
@@ -59,7 +57,6 @@ router.delete('/:id', async (req, res, next) => {
     const result: any = deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
-    console.log('catch on task delete by id');
     next(e);
   }
   return {};
@@ -67,9 +64,6 @@ router.delete('/:id', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
   const { params } = req;
-  console.log('on update task; query', req.query);
-  console.log('params: ', req.params);
-  console.log('body: ', req.body);
   const { id } = params;
   try {
     const result: any = updateTask({
@@ -78,7 +72,7 @@ router.put('/:id', async (req, res, next) => {
     });
     return res.status(200).json({ message: result });
   } catch (e) {
-    console.log('catch on task update by id');
+    console.log('task update error: ', e);
     next(e);
   }
   return {};

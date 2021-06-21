@@ -1,8 +1,6 @@
 import express, { Request } from 'express';
 import { body } from 'express-validator';
-import { getRepository } from 'typeorm';
 import User from '../../database/entities/User';
-import Task from '../../database/entities/Task';
 import { validate } from '../../helpers';
 import {
   getAll,
@@ -20,19 +18,12 @@ router.get('/', async (_req: Request, res) => {
 });
 
 router.get('/:id', async (req, res, next) => {
-  console.log(
-    'GETTING USER BY IDD!!!!!: , ',
-    req.params.id,
-    req.body.id,
-    req.query
-  );
   const { id } = req.params;
   try {
     const user = await getById(id as string);
     if (user) return res.status(200).json(User.toResponse(user));
     throw new CustomError(404, `There is no user with such (${id}) id.`);
   } catch (e) {
-    console.log('catch GETTING USER BY IDD!!!!!: , ');
     next(e);
   }
   return {};
@@ -42,16 +33,12 @@ router.post(
   '/',
   body(['name', 'login', 'password']).exists(),
   validate,
-  async (req, res) => {
+  async (req, res, next) => {
     try {
       const result = await createUser(req.body);
-      const tasks = await getRepository(Task)
-        .createQueryBuilder('task')
-        .getMany();
-      console.log('TASKs on delete: ', tasks);
       res.status(201).json(User.toResponse(result));
     } catch (e) {
-      console.log('catch on create user');
+      next(e);
     }
   }
 );
@@ -63,7 +50,7 @@ router.delete('/:id', async (req, res, next) => {
     const result: any = await deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
-    console.log('catch on delete user');
+    console.log('in delete user error: ', e);
     next(e);
   }
   return {};
@@ -79,7 +66,6 @@ router.put('/:id', async (req, res, next) => {
     });
     return res.status(200).json({ message: result });
   } catch (e) {
-    console.log('catch on put user');
     next(e);
   }
   return {};
