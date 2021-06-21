@@ -1,4 +1,4 @@
-import express, { Request } from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import { body } from 'express-validator';
 import { validate } from '../../helpers';
 import {
@@ -8,17 +8,15 @@ import {
   deleteById,
   updateTask,
 } from './task.service';
-import loggerActor from '../../logger';
-import Task from './task.model';
 import { CustomError } from '../../types';
 
 const router = express.Router({ mergeParams: true });
-router.get('/', loggerActor, async (_req: Request, res) => {
+router.get('/', async (_req: Request, res) => {
   const users = getAll();
   res.json(users);
 });
 
-router.get('/:id', loggerActor, async (req, res, next) => {
+router.get('/:id', async (req, res, next) => {
   const { id } = req.params;
   try {
     const task = getById(id as string);
@@ -32,27 +30,31 @@ router.get('/:id', loggerActor, async (req, res, next) => {
 
 router.post(
   '/',
-  loggerActor,
+  body('userId').isUUID(),
   body('title').exists(),
   body('order').isNumeric(),
   validate,
-  (req, res) => {
-    const boardId = `${req.baseUrl}`.split('/')[2];
-    res.status(201).json(
-      createTask({
-        description: 'Lorem ipsum',
-        ...req.body,
-        boardId,
-      })
-    );
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const boardId = `${req.baseUrl}`.split('/')[2];
+      res.status(201).json(
+        createTask({
+          description: 'Lorem ipsum',
+          ...req.body,
+          boardId,
+        })
+      );
+    } catch (e) {
+      next(e);
+    }
   }
 );
 
-router.delete('/:id', loggerActor, async (req, res, next) => {
+router.delete('/:id', async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
-    const result: Task = deleteById(id as string);
+    const result: any = deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
     next(e);
@@ -60,16 +62,17 @@ router.delete('/:id', loggerActor, async (req, res, next) => {
   return {};
 });
 
-router.put('/:id', loggerActor, async (req, res, next) => {
+router.put('/:id', async (req, res, next) => {
   const { params } = req;
   const { id } = params;
   try {
-    const result: Task = updateTask({
+    const result: any = updateTask({
       ...req.body,
       id,
     });
     return res.status(200).json({ message: result });
   } catch (e) {
+    console.log('task update error: ', e);
     next(e);
   }
   return {};

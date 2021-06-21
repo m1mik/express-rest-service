@@ -1,0 +1,271 @@
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: There is no task with such (9c848a49-3abb-4146-89c7-0eed99c63f13) id.
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: There is no task with such (undefined) id.
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: There is no task with such (undefined) id.
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"Board\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: No repository for "Board" was found. Looks like this entity is not registered in current "default" connection?
+error: promise rejection reason: {"name":"RepositoryNotFoundError","message":"No repository for \"User\" was found. Looks like this entity is not registered in current \"default\" connection?"}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: promise rejection reason: {}, promise: {}
+error: No entity column "columns" was found.
+error: There is no board with such (6f208414-6d72-4b24-b30a-53de4aaafef7) id.
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: No entity column "columns" was found.
+error: There is no board with such (443ee22b-9de7-49e6-b56c-a033025a91fa) id.
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа integer: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: неверный синтаксис для типа uuid: "undefined"
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"UPDATE \"task\" SET \"title\" = $2, \"id\" = $3 WHERE \"id\" IN ($1)","parameters":["undefined","Autotest updated task","undefined"]}, promise: {}
+error: promise rejection reason: {"message":"неверный синтаксис для типа uuid: \"undefined\"","length":199,"name":"QueryFailedError","severity":"ОШИБКА","code":"22P02","file":"d:\\pginstaller_13.auto\\postgres.windows-x64\\src\\backend\\utils\\adt\\uuid.c","line":"137","routine":"string_to_uuid","query":"DELETE FROM \"task\" WHERE \"id\" IN ($1)","parameters":["undefined"]}, promise: {}
+error: неверный синтаксис для типа uuid: "undefined"

@@ -1,76 +1,65 @@
-import DB from '../DB';
-import Task from './task.model';
-import { CustomError } from '../../types';
+import {
+  getRepository,
+  getConnection,
+  DeleteResult,
+  UpdateResult,
+} from 'typeorm';
+import Task from '../../database/entities/Task';
+import Column from '../../database/entities/Column';
+import User from '../../database/entities/User';
+import Board from '../../database/entities/Board';
 
-/**
- * returns all Tasks
- * @returns {Task[]}
- */
-export const getAll = (): Task[] => DB.tasks;
+export const getAll = async (): Promise<Task[]> => {
+  const result = await getRepository(Task).createQueryBuilder('task').getMany();
+  return result;
+};
 
-/**
- * returns Task by incoming id or undefined
- * @param {string} id - incoming task id
- * @returns {Task} task - founded in DB task
- * @throws {Error} error - returns error if there is no Task with such id
- */
-export const getById = (id: string): Task | undefined =>
-  DB.tasks.find((tas: Task) => tas.id === id);
+export const getById = async (id: string): Promise<Task | undefined> => {
+  const { manager } = getConnection();
+  const task = await manager.getId(Task, { id });
+  return task;
+};
 
-/**
- * creates task based on incoming data
- * @param {Partial<Task>} data - essential data for new task instance
- * @returns {Task} task - created task object
- */
-export const createTask = (data: {
+export const createTask = async (data: {
   title: string;
   order: number;
   description: string;
-}): Task => {
-  const newTask = new Task(data);
-  DB.tasks.push(newTask);
-  return newTask;
+  userId: string;
+  boardId: string;
+  columnId: string;
+}): Promise<Task> => {
+  const user = await getRepository(User).findOne({
+    where: {
+      id: data.userId,
+    },
+  });
+  const board = await getRepository(Board).findOne({
+    where: {
+      id: data.boardId,
+    },
+  });
+  const column = await getRepository(Column).findOne({
+    where: {
+      id: data.columnId,
+    },
+  });
+  const { manager } = getConnection();
+  const finalTask = { ...data, user, board, column };
+  const task = manager.create(Task, finalTask);
+  const result = await manager.save(task);
+  return result;
 };
 
-/**
- * deletes task by id
- * @param {string} id - incoming task id for remove
- * @returns {Task} task - returns deleted object
- * @throws {Error} error - returns error if there is no task with such id
- */
-export const deleteById = (id: string): Task => {
-  let removedTask = null;
-  DB.tasks = DB.tasks.filter((task) => {
-    if (task.id === id) {
-      removedTask = task;
-      return false;
-    }
-
-    return true;
-  });
-  if (removedTask) return removedTask;
-  throw new CustomError(404, `There is no task with ${id} id.`);
+export const deleteById = async (id: string): Promise<DeleteResult> => {
+  const { manager } = getConnection();
+  const task = await manager.delete(Task, id);
+  return task.raw;
 };
 
-/**
- * updates task based on incoming data
- * @param {Partial<Task>} dataForUpdate - object with new task data
- * @returns {Task} task - final look of updated task instance
- * @throws {Error} error - returns error if there is no task with such id
- */
-export const updateTask = (dataForUpdate: Partial<Task>): Task => {
-  let taskForReturn = null;
-  DB.tasks = DB.tasks.map((task) => {
-    if (task.id === dataForUpdate.id) {
-      const updatedTask = {
-        ...task,
-        ...dataForUpdate,
-      };
-      taskForReturn = updatedTask;
-      return updatedTask;
-    }
-    return task;
-  });
-  if (taskForReturn) return taskForReturn;
-  throw new CustomError(404, `There is no task with ${dataForUpdate.id} id.`);
+export const updateTask = async (
+  dataForUpdate: Partial<Task>
+): Promise<UpdateResult> => {
+  const { manager } = getConnection();
+  const task = await manager.update(Task, dataForUpdate.id, dataForUpdate);
+  return task.raw;
 };

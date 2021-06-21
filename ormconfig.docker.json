@@ -1,10 +1,20 @@
 {
-    "type": "postgres",
-    "host": "db",
-    "port": 5432,
-    "username": "postgres",
-    "password": "postgres",
-    "database": "stripe-example",
-    "synchronize": true,
-    "logging": false
+  "type": "postgres",
+  "host": "db",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "mydb",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "src/database/entities/*.ts"
+  ],
+  "migrations": [
+    "src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/database/entities",
+    "migrationsDir": "src/database/migrations"
   }
+}

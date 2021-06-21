@@ -1,7 +1,7 @@
-import Board from './resources/boards/board.model';
-import Column from './resources/columns/column.model';
-import Task from './resources/tasks/task.model';
-import User from './resources/users/user.model';
+import Board from './database/entities/Board';
+import Column from './database/entities/Column';
+import Task from './database/entities/Task';
+import User from './database/entities/User';
 
 export class CustomError extends Error {
   public code: number;
