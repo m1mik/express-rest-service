@@ -28,17 +28,16 @@ router.get('/test', (_req, _res, next) => {
 
 router.get('/:id', async (req, res, next) => {
   const { id } = req.params;
+  console.log('AIMED BOARD ID params: ', req.params.id, req.body.id);
   try {
     const board = await getById(id || '');
     if (board) return res.status(200).json(board);
     throw new CustomError(404, `There is no board with such (${id}) id.`);
   } catch (e) {
+    console.log('catch on board get by id');
     next(e);
   }
   return {};
-  // return res
-  //   .status(404)
-  //   .json({ message: `There is no board with such (${id}) id.` });
 });
 
 router.post(
@@ -62,6 +61,7 @@ router.delete('/:id', async (req, res, next) => {
     const result: any = await deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
+    console.log('catch on board delete by id');
     next(e);
   }
   return {};
@@ -75,6 +75,8 @@ router
     body('columns.*.order').exists().isNumeric(),
     body('columns.*.id').optional().isUUID(),
     async (req, res, next) => {
+      console.log('ON BOARD UPD data.');
+      console.log('Req body: ', req.body, req.params, req.query);
       try {
         const result = await updateBoard({
           ...req.body,
@@ -82,6 +84,7 @@ router
         });
         return res.status(200).json({ message: result });
       } catch (e) {
+        console.log('catch on board update');
         next(e);
       }
       return {};

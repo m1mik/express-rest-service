@@ -1,13 +1,8 @@
-import {
-  ManyToOne,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column as OrmColumn,
-} from 'typeorm';
+import { ManyToOne, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 // eslint-disable-next-line import/no-cycle
 import Board from './Board';
 // eslint-disable-next-line import/no-cycle
-import Column from './Column';
+import MyColumn from './Column';
 // eslint-disable-next-line import/no-cycle
 import User from './User';
 
@@ -16,20 +11,20 @@ export default class Task {
   @PrimaryGeneratedColumn('uuid')
   public id: string;
 
-  @OrmColumn()
+  @Column()
   public title: string;
 
-  @OrmColumn()
+  @Column()
   public order: number;
 
-  @OrmColumn()
+  @Column()
   public description: string;
 
   @ManyToOne(() => Board, (board) => board.tasks, { onDelete: 'CASCADE' })
   public board: Board;
 
-  @ManyToOne(() => Column, (column) => column.tasks, { onDelete: 'CASCADE' })
-  public column: Column;
+  @ManyToOne(() => MyColumn, (column) => column.tasks, { onDelete: 'CASCADE' })
+  public column: MyColumn;
 
   @ManyToOne(() => User, (user) => user.tasks, { onDelete: 'CASCADE' })
   public user: User;

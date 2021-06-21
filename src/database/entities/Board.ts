@@ -1,11 +1,6 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  Column as OrmColumn,
-  OneToMany,
-} from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 // eslint-disable-next-line import/no-cycle
-import Column from './Column';
+import MyColumn from './Column';
 // eslint-disable-next-line import/no-cycle
 import Task from './Task';
 
@@ -14,11 +9,11 @@ export default class Board {
   @PrimaryGeneratedColumn('uuid')
   public id: string;
 
-  @OrmColumn()
+  @Column()
   public title: string;
 
-  @OneToMany(() => Column, (column) => column.board, { cascade: true })
-  public columns: Column[];
+  @OneToMany(() => MyColumn, (column) => column.board, { cascade: true })
+  public columns: MyColumn[];
 
   @OneToMany(() => Task, (task) => task.board, { cascade: true })
   public tasks: Task[];

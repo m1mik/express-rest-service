@@ -3,14 +3,18 @@ import User from '../../database/entities/User';
 
 export const getAll = async (): Promise<Partial<User>[]> => {
   const result = (
-    await getRepository(User).createQueryBuilder('user').getMany()
+    await getRepository(User).createQueryBuilder('myusers').getMany()
   ).map((user: User) => User.toResponse(user));
   return result;
 };
 
 export const getById = async (id: string): Promise<User | undefined> => {
-  const result = await getRepository(User).createQueryBuilder('user').getMany();
-  console.log('is users setted: ', result.length, result[0]);
+  const result = await getRepository(User).findOne({
+    where: {
+      id,
+    },
+  });
+  console.log('is users setted: ', result[0]);
   const { manager } = getConnection();
   const user = await manager.preload(User, { id });
   return user;

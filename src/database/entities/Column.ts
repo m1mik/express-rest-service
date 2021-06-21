@@ -1,7 +1,7 @@
 import {
   Entity,
   PrimaryGeneratedColumn,
-  Column as OrmColumn,
+  Column,
   ManyToOne,
   OneToMany,
 } from 'typeorm';
@@ -10,15 +10,15 @@ import Board from './Board';
 // eslint-disable-next-line import/no-cycle
 import Task from './Task';
 
-@Entity()
-export default class Column {
+@Entity({ name: 'mycolumn' })
+export default class MyColumn {
   @PrimaryGeneratedColumn('uuid')
   public id: string;
 
-  @OrmColumn()
+  @Column()
   public title: string;
 
-  @OrmColumn()
+  @Column()
   public order: number;
 
   @OneToMany(() => Task, (task) => task.column, { cascade: true })

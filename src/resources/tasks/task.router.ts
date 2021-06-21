@@ -1,4 +1,4 @@
-import express, { Request } from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import { body } from 'express-validator';
 import { validate } from '../../helpers';
 import {
@@ -23,6 +23,7 @@ router.get('/:id', async (req, res, next) => {
     if (task) return res.status(200).json(task);
     throw new CustomError(404, `There is no task with such (${id}) id.`);
   } catch (e) {
+    console.log('catch on task get by id');
     next(e);
   }
   return {};
@@ -34,15 +35,20 @@ router.post(
   body('title').exists(),
   body('order').isNumeric(),
   validate,
-  (req, res) => {
-    const boardId = `${req.baseUrl}`.split('/')[2];
-    res.status(201).json(
-      createTask({
-        description: 'Lorem ipsum',
-        ...req.body,
-        boardId,
-      })
-    );
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const boardId = `${req.baseUrl}`.split('/')[2];
+      res.status(201).json(
+        createTask({
+          description: 'Lorem ipsum',
+          ...req.body,
+          boardId,
+        })
+      );
+    } catch (e) {
+      console.log('catch on create task');
+      next(e);
+    }
   }
 );
 
@@ -53,6 +59,7 @@ router.delete('/:id', async (req, res, next) => {
     const result: any = deleteById(id as string);
     return res.status(200).json({ message: result });
   } catch (e) {
+    console.log('catch on task delete by id');
     next(e);
   }
   return {};
@@ -71,6 +78,7 @@ router.put('/:id', async (req, res, next) => {
     });
     return res.status(200).json({ message: result });
   } catch (e) {
+    console.log('catch on task update by id');
     next(e);
   }
   return {};

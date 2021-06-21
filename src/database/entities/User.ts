@@ -8,7 +8,7 @@ export interface UserProps {
   password: string;
 }
 
-@Entity()
+@Entity({ name: 'myusers' })
 export default class User {
   @PrimaryGeneratedColumn('uuid')
   public id: string;
